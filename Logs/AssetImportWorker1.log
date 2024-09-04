@@ -15,7 +15,7 @@ C:/Users/998is/OneDrive/Documents/Personal/PUC/Unity/GrimFacade
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-64701
+52557
 Successfully changed project path to: C:/Users/998is/OneDrive/Documents/Personal/PUC/Unity/GrimFacade
 C:/Users/998is/OneDrive/Documents/Personal/PUC/Unity/GrimFacade
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/998is/OneDrive/Documents/Personal/PUC/Unity/GrimFacade
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [18144] Host "[IP] 192.168.15.97 [Port] 0 [Flags] 2 [Guid] 1079113308 [EditorId] 1079113308 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-JC2AH5G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [168] Host "[IP] 192.168.0.224 [Port] 0 [Flags] 2 [Guid] 1872234062 [EditorId] 1872234062 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-JC2AH5G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [18144] Host "[IP] 192.168.15.97 [Port] 0 [Flags] 2 [Guid] 1079113308 [EditorId] 1079113308 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-JC2AH5G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [168] Host "[IP] 192.168.0.224 [Port] 0 [Flags] 2 [Guid] 1872234062 [EditorId] 1872234062 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-JC2AH5G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 3.09 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.20 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.19f1 (244b723c30a6)
 [Subsystems] Discovering subsystems at path C:/Program Files/2022.3.19f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/2022.3.19f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/2022.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/2022.3.19f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56364
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56548
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/2022.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012160 seconds.
-- Loaded All Assemblies, in  0.525 seconds
+Registered in 0.010829 seconds.
+- Loaded All Assemblies, in  0.404 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.370 seconds
-Domain Reload Profiling: 890ms
-	BeginReloadAssembly (172ms)
+- Finished resetting the current domain, in  0.292 seconds
+Domain Reload Profiling: 693ms
+	BeginReloadAssembly (120ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (49ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (84ms)
-	LoadAllAssembliesAndSetupDomain (200ms)
-		LoadAssemblies (166ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (65ms)
+	LoadAllAssembliesAndSetupDomain (168ms)
+		LoadAssemblies (117ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (198ms)
-			TypeCache.Refresh (196ms)
-				TypeCache.ScanAssembly (177ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (370ms)
+		AnalyzeDomain (166ms)
+			TypeCache.Refresh (164ms)
+				TypeCache.ScanAssembly (147ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (293ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (290ms)
+		SetupLoadedEditorAssemblies (227ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
+			InitializePlatformSupportModulesInManaged (11ms)
 			SetLoadedEditorAssemblies (8ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (197ms)
-			ProcessInitializeOnLoadMethodAttributes (68ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (158ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,51 +115,51 @@ Domain Reload Profiling: 890ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.646 seconds
-Refreshing native plugins compatible for Editor in 1.49 ms, found 0 plugins.
+- Loaded All Assemblies, in  0.445 seconds
+Refreshing native plugins compatible for Editor in 0.91 ms, found 0 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.582 seconds
-Domain Reload Profiling: 1222ms
-	BeginReloadAssembly (242ms)
+- Finished resetting the current domain, in  0.407 seconds
+Domain Reload Profiling: 848ms
+	BeginReloadAssembly (170ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (36ms)
-	RebuildCommonClasses (64ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (71ms)
-	LoadAllAssembliesAndSetupDomain (243ms)
-		LoadAssemblies (331ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (172ms)
+		LoadAssemblies (220ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (62ms)
-			TypeCache.Refresh (49ms)
-				TypeCache.ScanAssembly (37ms)
-			ScanForSourceGeneratedMonoScriptInfo (9ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (583ms)
+		AnalyzeDomain (52ms)
+			TypeCache.Refresh (39ms)
+				TypeCache.ScanAssembly (29ms)
+			ScanForSourceGeneratedMonoScriptInfo (8ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (407ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (382ms)
+		SetupLoadedEditorAssemblies (258ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (12ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (74ms)
-			ProcessInitializeOnLoadAttributes (230ms)
-			ProcessInitializeOnLoadMethodAttributes (45ms)
-			AfterProcessingInitializeOnLoad (17ms)
+			BeforeProcessingInitializeOnLoad (50ms)
+			ProcessInitializeOnLoadAttributes (155ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (12ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 1.68 ms, found 0 plugins.
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.01 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1124 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 20 unused Assets / (52.4 KB). Loaded Objects now: 1601.
-Memory consumption went from 76.4 MB to 76.4 MB.
-Total: 3.818400 ms (FindLiveObjects: 0.186000 ms CreateObjectMapping: 0.111900 ms MarkObjects: 3.436000 ms  DeleteObjects: 0.083400 ms)
+Memory consumption went from 77.7 MB to 77.7 MB.
+Total: 3.314700 ms (FindLiveObjects: 0.113300 ms CreateObjectMapping: 0.041200 ms MarkObjects: 3.072400 ms  DeleteObjects: 0.087100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
@@ -176,10 +176,418 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 12257.663518 seconds.
-  path: Assets/PlatformerSet1/04 background.png
-  artifactKey: Guid(048637bba7f02c8499a2dfc07ecc075f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlatformerSet1/04 background.png using Guid(048637bba7f02c8499a2dfc07ecc075f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ae164310359733f25f7282e0efa10c2') in 0.145307 seconds
+  Time since last request: 6225.046405 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_1.asset
+  artifactKey: Guid(6ebdff16edbb86a4d8f6cccfc93b977f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_1.asset using Guid(6ebdff16edbb86a4d8f6cccfc93b977f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '312dece84f976cb6324b0456c4af3fbb') in 0.135400 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_14.asset
+  artifactKey: Guid(1866a461b63bed143b8f56396c12cfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_14.asset using Guid(1866a461b63bed143b8f56396c12cfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d8196f70ea0f5b1e39cd5a4360ac86d') in 0.009997 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_15.asset
+  artifactKey: Guid(832da2153181a6d41ad91baf8199bc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_15.asset using Guid(832da2153181a6d41ad91baf8199bc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f1018b56387c13cc769a08e9ee9e7d5') in 0.007709 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_24.asset
+  artifactKey: Guid(772e2dc6c23fadd4f9ae407166cbed68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_24.asset using Guid(772e2dc6c23fadd4f9ae407166cbed68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e798588bcea04e7e39793b0f1e252e0a') in 0.007839 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_3.asset
+  artifactKey: Guid(73625ffd3a8a8be4cb4b6c80aef2d121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_3.asset using Guid(73625ffd3a8a8be4cb4b6c80aef2d121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e8a32f3ba71f0aafa51cf383882d6a3') in 0.009573 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_11.asset
+  artifactKey: Guid(ef748bf7ae07bcf40b3c01eca6f29c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_11.asset using Guid(ef748bf7ae07bcf40b3c01eca6f29c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad8bf317e56ce791e1c5ce9dee338e3e') in 0.009100 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_18.asset
+  artifactKey: Guid(0516a4b0b62a4504a99f5c605a3c49d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_18.asset using Guid(0516a4b0b62a4504a99f5c605a3c49d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f8a5491d5c994c3cb7e4a0c8001ef34') in 0.011905 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_10.asset
+  artifactKey: Guid(e740f3d87bb2f664aad64f27d6cb391c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_10.asset using Guid(e740f3d87bb2f664aad64f27d6cb391c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8851f1602d29161e7e1376bf1515fee0') in 0.007688 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_4.asset
+  artifactKey: Guid(a7961a72cc139634c8e3b35cc4633d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_4.asset using Guid(a7961a72cc139634c8e3b35cc4633d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '234b019f6539fb5e003c4f7ae8746048') in 0.008008 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.262701 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_2.asset
+  artifactKey: Guid(528fd4165149c3f488e33ce504cd6233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_2.asset using Guid(528fd4165149c3f488e33ce504cd6233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5f0be3e55aafe825cddf7bec3954cc5') in 0.008496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_12.asset
+  artifactKey: Guid(18c21a81d6c39f74c876563a8819e351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_12.asset using Guid(18c21a81d6c39f74c876563a8819e351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89735abbb12f61f551d9b81c6976f2af') in 0.009017 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_28.asset
+  artifactKey: Guid(7d75958ef751b6e4f8e432fb5bb77abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_28.asset using Guid(7d75958ef751b6e4f8e432fb5bb77abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3547d997c603c4b57bc9af0b9eaaebc4') in 0.007500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_20.asset
+  artifactKey: Guid(f266995a43c7db64f9a9bf12f7143878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_20.asset using Guid(f266995a43c7db64f9a9bf12f7143878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9accc4e7ed44857549de43e0f5bb314f') in 0.007803 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_21.asset
+  artifactKey: Guid(1fadddc83ac26914bbefc9c869ee5727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_21.asset using Guid(1fadddc83ac26914bbefc9c869ee5727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae60f8aab5a8b47bb65e1fecf2374138') in 0.008636 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_14.asset
+  artifactKey: Guid(1866a461b63bed143b8f56396c12cfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_14.asset using Guid(1866a461b63bed143b8f56396c12cfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '807f802c559227c4697dbe5aad9fb772') in 0.010164 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_25.asset
+  artifactKey: Guid(fc5df9b9b3cb96644bfe6daf751d8cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_25.asset using Guid(fc5df9b9b3cb96644bfe6daf751d8cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e85dd8731d062870f1faecce342c55e') in 0.009867 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_17.asset
+  artifactKey: Guid(019698ce1f2159245a9c15cc7f1a7544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_17.asset using Guid(019698ce1f2159245a9c15cc7f1a7544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66244458dae45017cb815a9009c6d370') in 0.010026 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_16.asset
+  artifactKey: Guid(c614ac638f15edd4a92405821c9e6996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_16.asset using Guid(c614ac638f15edd4a92405821c9e6996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b6c29b5a236c851c63f042f10041012') in 0.008565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_11.asset
+  artifactKey: Guid(ef748bf7ae07bcf40b3c01eca6f29c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_11.asset using Guid(ef748bf7ae07bcf40b3c01eca6f29c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fda0d6e52676e0f7fa9cb48a04a5302') in 0.008321 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_18.asset
+  artifactKey: Guid(0516a4b0b62a4504a99f5c605a3c49d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_18.asset using Guid(0516a4b0b62a4504a99f5c605a3c49d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd918b7de86a1011b10f14d908d7e20a1') in 0.008140 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_6.asset
+  artifactKey: Guid(50ccf53802fc3dc488b823e831c4eeac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_6.asset using Guid(50ccf53802fc3dc488b823e831c4eeac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abec71f4a3517d15eb7ffcc042ad099f') in 0.008906 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_8.asset
+  artifactKey: Guid(2b0f12fe3a6ad5b41a12ea95e1be3b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_8.asset using Guid(2b0f12fe3a6ad5b41a12ea95e1be3b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7f09c30eb803b4bc8437fb05d57189e') in 0.008597 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 4.558131 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_2.asset
+  artifactKey: Guid(528fd4165149c3f488e33ce504cd6233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_2.asset using Guid(528fd4165149c3f488e33ce504cd6233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef2365d149a75425725880d4c78691fa') in 0.008692 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_23.asset
+  artifactKey: Guid(0d7050f32a766124e8eff01fd231f13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_23.asset using Guid(0d7050f32a766124e8eff01fd231f13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6935a3411e3c2d4332fe276276d35a9') in 0.011319 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_5.asset
+  artifactKey: Guid(a7a7e3be524cec34eb25ceed558a71c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_5.asset using Guid(a7a7e3be524cec34eb25ceed558a71c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9204cd64142f6d57e42ed2e81cfb061c') in 0.009709 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_9.asset
+  artifactKey: Guid(378ba8008e8cca74daa6a166a9eae513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_9.asset using Guid(378ba8008e8cca74daa6a166a9eae513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7628f1b29ebaf92df31ce31dd960474') in 0.008357 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_24.asset
+  artifactKey: Guid(772e2dc6c23fadd4f9ae407166cbed68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_24.asset using Guid(772e2dc6c23fadd4f9ae407166cbed68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00bca84c2cf224482c350d001b23511c') in 0.008641 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_19.asset
+  artifactKey: Guid(a42ebb556f8c1414f9eb28e0f3a880f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_19.asset using Guid(a42ebb556f8c1414f9eb28e0f3a880f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9968cd8dfbe785fa4919973b06e45889') in 0.009493 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_4.asset
+  artifactKey: Guid(a7961a72cc139634c8e3b35cc4633d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_4.asset using Guid(a7961a72cc139634c8e3b35cc4633d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9096ab54acc01d8b62ca9c81a8f45a68') in 0.010178 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.736747 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_2.asset
+  artifactKey: Guid(528fd4165149c3f488e33ce504cd6233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_2.asset using Guid(528fd4165149c3f488e33ce504cd6233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '262f99656a0e54a60154fb2f2726590e') in 0.008153 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_12.asset
+  artifactKey: Guid(18c21a81d6c39f74c876563a8819e351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_12.asset using Guid(18c21a81d6c39f74c876563a8819e351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15bd7a1f5ba352f5230a9e812d7f9925') in 0.010268 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_27.asset
+  artifactKey: Guid(0fb4f1e2cbc651449a763d5948b45cab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_27.asset using Guid(0fb4f1e2cbc651449a763d5948b45cab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ad6f3aeca1147d8cfa0e97f81d1eb2c') in 0.008477 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_26.asset
+  artifactKey: Guid(60d0ddb645b0e54439019172138f2162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_26.asset using Guid(60d0ddb645b0e54439019172138f2162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22b4bee90b995a75121da6240b3adb1c') in 0.007758 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_15.asset
+  artifactKey: Guid(832da2153181a6d41ad91baf8199bc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_15.asset using Guid(832da2153181a6d41ad91baf8199bc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a0662b2d8ee51815ba7ef3d37e2e094') in 0.010643 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_13.asset
+  artifactKey: Guid(4af209357579d8242bd621bf56833a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_13.asset using Guid(4af209357579d8242bd621bf56833a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '612cba0b0db32cf1df7f0655301a846b') in 0.008178 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_10.asset
+  artifactKey: Guid(e740f3d87bb2f664aad64f27d6cb391c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_10.asset using Guid(e740f3d87bb2f664aad64f27d6cb391c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4c7f55ab585bd1def8bbda51bf94b36') in 0.010206 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_8.asset
+  artifactKey: Guid(2b0f12fe3a6ad5b41a12ea95e1be3b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_8.asset using Guid(2b0f12fe3a6ad5b41a12ea95e1be3b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aadcbd3da5180e1b9ae3baca7b5d6f84') in 0.010884 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 6.287925 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_2.asset
+  artifactKey: Guid(528fd4165149c3f488e33ce504cd6233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_2.asset using Guid(528fd4165149c3f488e33ce504cd6233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55cbbc0993a227d463acf72e196fd6de') in 0.008330 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_7.asset
+  artifactKey: Guid(ec2026adbaaa916409eaaed11a1a3b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_7.asset using Guid(ec2026adbaaa916409eaaed11a1a3b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62360902896d353a1efa2f517b0c83a9') in 0.009821 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_27.asset
+  artifactKey: Guid(0fb4f1e2cbc651449a763d5948b45cab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_27.asset using Guid(0fb4f1e2cbc651449a763d5948b45cab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4acf6e5d952f28c37ef4777e9392d87d') in 0.009102 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_14.asset
+  artifactKey: Guid(1866a461b63bed143b8f56396c12cfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_14.asset using Guid(1866a461b63bed143b8f56396c12cfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dda40136aa780fb479c134cae885f355') in 0.008467 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_17.asset
+  artifactKey: Guid(019698ce1f2159245a9c15cc7f1a7544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_17.asset using Guid(019698ce1f2159245a9c15cc7f1a7544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb18cf70e49a3e3c6add15ecd5deda2e') in 0.009861 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_11.asset
+  artifactKey: Guid(ef748bf7ae07bcf40b3c01eca6f29c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_11.asset using Guid(ef748bf7ae07bcf40b3c01eca6f29c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f56f589a856882299a9357daeb4a02a7') in 0.009714 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_10.asset
+  artifactKey: Guid(e740f3d87bb2f664aad64f27d6cb391c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_10.asset using Guid(e740f3d87bb2f664aad64f27d6cb391c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23d0eb9c9d6f87b7b41b8c68fff121ff') in 0.009022 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_22.asset
+  artifactKey: Guid(784dd295e57d936449f2ff43f26be453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_22.asset using Guid(784dd295e57d936449f2ff43f26be453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30bb49e8a77484fb098adc30d45bb4d9') in 0.011675 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 6.478102 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_2.asset
+  artifactKey: Guid(528fd4165149c3f488e33ce504cd6233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_2.asset using Guid(528fd4165149c3f488e33ce504cd6233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbd63ac44615f90c671f18579d3f0440') in 0.008425 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_5.asset
+  artifactKey: Guid(a7a7e3be524cec34eb25ceed558a71c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_5.asset using Guid(a7a7e3be524cec34eb25ceed558a71c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ca32dfcc800040ecad716deaf3cbf2b') in 0.009085 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_12.asset
+  artifactKey: Guid(18c21a81d6c39f74c876563a8819e351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_12.asset using Guid(18c21a81d6c39f74c876563a8819e351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '559e8d4f1f37012ae6f5e6eab2ced6ec') in 0.008986 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_20.asset
+  artifactKey: Guid(f266995a43c7db64f9a9bf12f7143878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_20.asset using Guid(f266995a43c7db64f9a9bf12f7143878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6feae97966e08b3d97fa90cbad2fdc4c') in 0.010919 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_15.asset
+  artifactKey: Guid(832da2153181a6d41ad91baf8199bc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_15.asset using Guid(832da2153181a6d41ad91baf8199bc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49cc909a25a0a36649f246d4b5ee08e2') in 0.010040 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_13.asset
+  artifactKey: Guid(4af209357579d8242bd621bf56833a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_13.asset using Guid(4af209357579d8242bd621bf56833a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b31240034eb7f56cb1d92b259a65d670') in 0.009105 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_22.asset
+  artifactKey: Guid(784dd295e57d936449f2ff43f26be453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_22.asset using Guid(784dd295e57d936449f2ff43f26be453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cba20482362924906a3775ec77ca6cb5') in 0.009194 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout

@@ -15,7 +15,7 @@ C:/Users/998is/OneDrive/Documents/Personal/PUC/Unity/GrimFacade
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64701
+52557
 Successfully changed project path to: C:/Users/998is/OneDrive/Documents/Personal/PUC/Unity/GrimFacade
 C:/Users/998is/OneDrive/Documents/Personal/PUC/Unity/GrimFacade
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/998is/OneDrive/Documents/Personal/PUC/Unity/GrimFacade
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [16504] Host "[IP] 192.168.15.97 [Port] 0 [Flags] 2 [Guid] 3027502626 [EditorId] 3027502626 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-JC2AH5G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [1984] Host "[IP] 192.168.0.224 [Port] 0 [Flags] 2 [Guid] 1077464835 [EditorId] 1077464835 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-JC2AH5G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [16504] Host "[IP] 192.168.15.97 [Port] 0 [Flags] 2 [Guid] 3027502626 [EditorId] 3027502626 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-JC2AH5G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [1984] Host "[IP] 192.168.0.224 [Port] 0 [Flags] 2 [Guid] 1077464835 [EditorId] 1077464835 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-JC2AH5G) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 3.04 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 2.38 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.19f1 (244b723c30a6)
 [Subsystems] Discovering subsystems at path C:/Program Files/2022.3.19f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/2022.3.19f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/2022.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/2022.3.19f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56448
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56256
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/2022.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012880 seconds.
-- Loaded All Assemblies, in  0.530 seconds
+Registered in 0.010511 seconds.
+- Loaded All Assemblies, in  0.417 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.367 seconds
-Domain Reload Profiling: 893ms
-	BeginReloadAssembly (173ms)
+- Finished resetting the current domain, in  0.285 seconds
+Domain Reload Profiling: 699ms
+	BeginReloadAssembly (120ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (47ms)
-	RebuildNativeTypeToScriptingClass (23ms)
-	initialDomainReloadingComplete (85ms)
-	LoadAllAssembliesAndSetupDomain (197ms)
-		LoadAssemblies (167ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (67ms)
+	LoadAllAssembliesAndSetupDomain (180ms)
+		LoadAssemblies (116ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (195ms)
-			TypeCache.Refresh (193ms)
-				TypeCache.ScanAssembly (174ms)
+		AnalyzeDomain (178ms)
+			TypeCache.Refresh (176ms)
+				TypeCache.ScanAssembly (161ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (367ms)
+	FinalizeReload (285ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (284ms)
+		SetupLoadedEditorAssemblies (222ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
-			SetLoadedEditorAssemblies (11ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (9ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (188ms)
-			ProcessInitializeOnLoadMethodAttributes (68ms)
+			ProcessInitializeOnLoadAttributes (155ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,51 +115,51 @@ Domain Reload Profiling: 893ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.625 seconds
-Refreshing native plugins compatible for Editor in 1.22 ms, found 0 plugins.
+- Loaded All Assemblies, in  0.443 seconds
+Refreshing native plugins compatible for Editor in 1.29 ms, found 0 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.585 seconds
-Domain Reload Profiling: 1203ms
-	BeginReloadAssembly (227ms)
+- Finished resetting the current domain, in  0.411 seconds
+Domain Reload Profiling: 850ms
+	BeginReloadAssembly (168ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (27ms)
-	RebuildCommonClasses (60ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (67ms)
-	LoadAllAssembliesAndSetupDomain (248ms)
-		LoadAssemblies (319ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (172ms)
+		LoadAssemblies (221ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (76ms)
-			TypeCache.Refresh (62ms)
-				TypeCache.ScanAssembly (44ms)
-			ScanForSourceGeneratedMonoScriptInfo (10ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (585ms)
+		AnalyzeDomain (50ms)
+			TypeCache.Refresh (37ms)
+				TypeCache.ScanAssembly (28ms)
+			ScanForSourceGeneratedMonoScriptInfo (9ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (411ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (373ms)
+		SetupLoadedEditorAssemblies (259ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (73ms)
-			ProcessInitializeOnLoadAttributes (221ms)
-			ProcessInitializeOnLoadMethodAttributes (49ms)
-			AfterProcessingInitializeOnLoad (15ms)
+			BeforeProcessingInitializeOnLoad (52ms)
+			ProcessInitializeOnLoadAttributes (155ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (12ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.71 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.10 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1124 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 20 unused Assets / (52.4 KB). Loaded Objects now: 1601.
-Memory consumption went from 76.5 MB to 76.4 MB.
-Total: 3.937700 ms (FindLiveObjects: 0.200000 ms CreateObjectMapping: 0.115700 ms MarkObjects: 3.521800 ms  DeleteObjects: 0.098700 ms)
+Unloading 20 unused Assets / (52.5 KB). Loaded Objects now: 1601.
+Memory consumption went from 77.7 MB to 77.6 MB.
+Total: 3.368700 ms (FindLiveObjects: 0.107600 ms CreateObjectMapping: 0.036200 ms MarkObjects: 3.100400 ms  DeleteObjects: 0.123000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
@@ -176,36 +176,1650 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 12257.588833 seconds.
-  path: Assets/PlatformerSet1/03 background A.png
-  artifactKey: Guid(eb06709a3d006f5448d017252797e8a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlatformerSet1/03 background A.png using Guid(eb06709a3d006f5448d017252797e8a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '344387ad691674979472f6d62b701c10') in 0.141891 seconds
+  Time since last request: 6049.017712 seconds.
+  path: Assets/PlatformerSet1/florest.prefab
+  artifactKey: Guid(9bf54c360202be749b1710b293ee9ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/florest.prefab using Guid(9bf54c360202be749b1710b293ee9ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39ad714e318c2e7d50bc132e2a7893b0') in 0.096699 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 175.929287 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_0.asset
+  artifactKey: Guid(f0f6f4d86ad4139479443606c3281097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_0.asset using Guid(f0f6f4d86ad4139479443606c3281097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e5a5647996fd43d4cbe04cc97f07c2d') in 0.038277 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/PlatformerSet1/Scene
-  artifactKey: Guid(beb4ccb91a6241c4ebb130252e879892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlatformerSet1/Scene using Guid(beb4ccb91a6241c4ebb130252e879892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de120389ce2565eda54edd87ed02d1b8') in 0.000647 seconds
+  Time since last request: 0.000029 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_7.asset
+  artifactKey: Guid(ec2026adbaaa916409eaaed11a1a3b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_7.asset using Guid(ec2026adbaaa916409eaaed11a1a3b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '746b2e1b0b0c1cc43e54f8c06c43e836') in 0.010781 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/PlatformerSet1/05 background.png
-  artifactKey: Guid(7856ff2c37949ad4d9e77bec3b91e755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlatformerSet1/05 background.png using Guid(7856ff2c37949ad4d9e77bec3b91e755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37748bf28642af3fd0ab829559be6a8e') in 0.036802 seconds
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_27.asset
+  artifactKey: Guid(0fb4f1e2cbc651449a763d5948b45cab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_27.asset using Guid(0fb4f1e2cbc651449a763d5948b45cab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87bd210f59fede33846979988cb86c21') in 0.010032 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_28.asset
+  artifactKey: Guid(7d75958ef751b6e4f8e432fb5bb77abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_28.asset using Guid(7d75958ef751b6e4f8e432fb5bb77abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42824d959b114d7311a4481c702ffa01') in 0.010195 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_12.asset
+  artifactKey: Guid(18c21a81d6c39f74c876563a8819e351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_12.asset using Guid(18c21a81d6c39f74c876563a8819e351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71db1b16a384e58f1a5853ca4aa4bc72') in 0.010678 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_20.asset
+  artifactKey: Guid(f266995a43c7db64f9a9bf12f7143878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_20.asset using Guid(f266995a43c7db64f9a9bf12f7143878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a55cdc06eb22cc126026da1b6811cb98') in 0.009996 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_5.asset
+  artifactKey: Guid(a7a7e3be524cec34eb25ceed558a71c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_5.asset using Guid(a7a7e3be524cec34eb25ceed558a71c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96a09b35fb2d9e9b629ccc55eea33dcc') in 0.007025 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_2.asset
+  artifactKey: Guid(528fd4165149c3f488e33ce504cd6233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_2.asset using Guid(528fd4165149c3f488e33ce504cd6233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b472e8c5c119a407b50056e17709e08') in 0.010465 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_21.asset
+  artifactKey: Guid(1fadddc83ac26914bbefc9c869ee5727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_21.asset using Guid(1fadddc83ac26914bbefc9c869ee5727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dec1326bff6de7c2b6f8db47e7ed1c35') in 0.006765 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_23.asset
+  artifactKey: Guid(0d7050f32a766124e8eff01fd231f13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_23.asset using Guid(0d7050f32a766124e8eff01fd231f13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '664d5f3599b4e95d79a5c5941599bc98') in 0.006463 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_26.asset
+  artifactKey: Guid(60d0ddb645b0e54439019172138f2162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_26.asset using Guid(60d0ddb645b0e54439019172138f2162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92eb4f5dc8f0f0cc89f67e0106031a23') in 0.007686 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_9.asset
+  artifactKey: Guid(378ba8008e8cca74daa6a166a9eae513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_9.asset using Guid(378ba8008e8cca74daa6a166a9eae513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '715683301e6262682331b997b9710914') in 0.007437 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_25.asset
+  artifactKey: Guid(fc5df9b9b3cb96644bfe6daf751d8cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_25.asset using Guid(fc5df9b9b3cb96644bfe6daf751d8cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12fe4cedb485e2e1be9524ffc3c00569') in 0.008315 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_17.asset
+  artifactKey: Guid(019698ce1f2159245a9c15cc7f1a7544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_17.asset using Guid(019698ce1f2159245a9c15cc7f1a7544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baa294027b0bb0523030023daa3d4612') in 0.009104 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_16.asset
+  artifactKey: Guid(c614ac638f15edd4a92405821c9e6996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_16.asset using Guid(c614ac638f15edd4a92405821c9e6996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '315f2719e67d4ab5801236c57c71da71') in 0.010207 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_13.asset
+  artifactKey: Guid(4af209357579d8242bd621bf56833a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_13.asset using Guid(4af209357579d8242bd621bf56833a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0751a24c7ea43621c5f0a717e57ec35') in 0.009276 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_19.asset
+  artifactKey: Guid(a42ebb556f8c1414f9eb28e0f3a880f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_19.asset using Guid(a42ebb556f8c1414f9eb28e0f3a880f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e2573064b3635a4c39565c3d304c987') in 0.012406 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_6.asset
+  artifactKey: Guid(50ccf53802fc3dc488b823e831c4eeac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_6.asset using Guid(50ccf53802fc3dc488b823e831c4eeac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a7bd897fdefa6d18559faf1fe582689') in 0.008122 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_22.asset
+  artifactKey: Guid(784dd295e57d936449f2ff43f26be453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_22.asset using Guid(784dd295e57d936449f2ff43f26be453) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06e468aab05c33b66a019a111e424109') in 0.007048 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_8.asset
+  artifactKey: Guid(2b0f12fe3a6ad5b41a12ea95e1be3b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_8.asset using Guid(2b0f12fe3a6ad5b41a12ea95e1be3b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2816c09486fb02290e3a54a66b098284') in 0.009306 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.252425 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_1.asset
+  artifactKey: Guid(6ebdff16edbb86a4d8f6cccfc93b977f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_1.asset using Guid(6ebdff16edbb86a4d8f6cccfc93b977f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65caf4c869aa3ca8026c065f2d3912f4') in 0.008176 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_7.asset
+  artifactKey: Guid(ec2026adbaaa916409eaaed11a1a3b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_7.asset using Guid(ec2026adbaaa916409eaaed11a1a3b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50c8a1edddfbc027badd86453f88d21f') in 0.009278 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_27.asset
+  artifactKey: Guid(0fb4f1e2cbc651449a763d5948b45cab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_27.asset using Guid(0fb4f1e2cbc651449a763d5948b45cab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6e90824bd4452b0529044f188b5c614') in 0.008429 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_5.asset
+  artifactKey: Guid(a7a7e3be524cec34eb25ceed558a71c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_5.asset using Guid(a7a7e3be524cec34eb25ceed558a71c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '356d2cc767273a43421e2ef35dd0a1b4') in 0.007626 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_23.asset
+  artifactKey: Guid(0d7050f32a766124e8eff01fd231f13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_23.asset using Guid(0d7050f32a766124e8eff01fd231f13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0553dff233732acb149afca4dfc568cf') in 0.007227 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
   Time since last request: 0.000021 seconds.
-  path: Assets/PlatformerSet1/main_lev_build.png
-  artifactKey: Guid(6d28f55f1b0572546b2632db94416d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlatformerSet1/main_lev_build.png using Guid(6d28f55f1b0572546b2632db94416d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb107a0736aa5251947552b5edccaf1e') in 0.036472 seconds
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_26.asset
+  artifactKey: Guid(60d0ddb645b0e54439019172138f2162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_26.asset using Guid(60d0ddb645b0e54439019172138f2162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f58cc965c90be4336d913dfa998e3a5b') in 0.010820 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_9.asset
+  artifactKey: Guid(378ba8008e8cca74daa6a166a9eae513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_9.asset using Guid(378ba8008e8cca74daa6a166a9eae513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3b0413d4a25fedb6ae8e8378c734d5e') in 0.009030 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_15.asset
+  artifactKey: Guid(832da2153181a6d41ad91baf8199bc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_15.asset using Guid(832da2153181a6d41ad91baf8199bc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5091837f3d3ad2a7b1d9a3a2a00f99cb') in 0.008768 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_24.asset
+  artifactKey: Guid(772e2dc6c23fadd4f9ae407166cbed68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_24.asset using Guid(772e2dc6c23fadd4f9ae407166cbed68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f303de3dc95b17919a458e9281d61c5e') in 0.009000 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_13.asset
+  artifactKey: Guid(4af209357579d8242bd621bf56833a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_13.asset using Guid(4af209357579d8242bd621bf56833a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '350a18f72fd180206cfe2a5c22ab0693') in 0.008395 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_19.asset
+  artifactKey: Guid(a42ebb556f8c1414f9eb28e0f3a880f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_19.asset using Guid(a42ebb556f8c1414f9eb28e0f3a880f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93bc6e345125f4185dc3e55bbbe17f48') in 0.008395 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_10.asset
+  artifactKey: Guid(e740f3d87bb2f664aad64f27d6cb391c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_10.asset using Guid(e740f3d87bb2f664aad64f27d6cb391c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30dd1b4bf6d05c7fe8b73603f4b69f7b') in 0.007915 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_4.asset
+  artifactKey: Guid(a7961a72cc139634c8e3b35cc4633d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_4.asset using Guid(a7961a72cc139634c8e3b35cc4633d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e34aa2fab519946612296ceff48af8c1') in 0.009524 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 4.561750 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_1.asset
+  artifactKey: Guid(6ebdff16edbb86a4d8f6cccfc93b977f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_1.asset using Guid(6ebdff16edbb86a4d8f6cccfc93b977f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d4553127be429a3114f49fa62372020') in 0.008204 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_12.asset
+  artifactKey: Guid(18c21a81d6c39f74c876563a8819e351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_12.asset using Guid(18c21a81d6c39f74c876563a8819e351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32d90b4253d0d39217b39668b2f462b0') in 0.010783 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_20.asset
+  artifactKey: Guid(f266995a43c7db64f9a9bf12f7143878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_20.asset using Guid(f266995a43c7db64f9a9bf12f7143878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b49091fbaa50edf497568d56e9d53b15') in 0.008536 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_14.asset
+  artifactKey: Guid(1866a461b63bed143b8f56396c12cfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_14.asset using Guid(1866a461b63bed143b8f56396c12cfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e978109d621d3c4ddfb8ce128737923') in 0.008495 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_17.asset
+  artifactKey: Guid(019698ce1f2159245a9c15cc7f1a7544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_17.asset using Guid(019698ce1f2159245a9c15cc7f1a7544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a6d92e89b22938b1ea5b8e291e1be87') in 0.008941 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_11.asset
+  artifactKey: Guid(ef748bf7ae07bcf40b3c01eca6f29c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_11.asset using Guid(ef748bf7ae07bcf40b3c01eca6f29c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f917ca34ba756950461bb707e910174') in 0.008897 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_10.asset
+  artifactKey: Guid(e740f3d87bb2f664aad64f27d6cb391c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_10.asset using Guid(e740f3d87bb2f664aad64f27d6cb391c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd9cf57a435047123be2dd82a5a5de82') in 0.010135 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.739409 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_1.asset
+  artifactKey: Guid(6ebdff16edbb86a4d8f6cccfc93b977f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_1.asset using Guid(6ebdff16edbb86a4d8f6cccfc93b977f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abc4badc77ca75209063cfc34c07b71d') in 0.008689 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_23.asset
+  artifactKey: Guid(0d7050f32a766124e8eff01fd231f13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_23.asset using Guid(0d7050f32a766124e8eff01fd231f13a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebbc92598ab42624439ba9f583c58250') in 0.013508 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_5.asset
+  artifactKey: Guid(a7a7e3be524cec34eb25ceed558a71c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_5.asset using Guid(a7a7e3be524cec34eb25ceed558a71c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8d61f75e24345ef84b6bd4c4c897b5f') in 0.010209 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_9.asset
+  artifactKey: Guid(378ba8008e8cca74daa6a166a9eae513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_9.asset using Guid(378ba8008e8cca74daa6a166a9eae513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c349dec6ae3769bbc0cbdbcc0b667f42') in 0.009845 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_16.asset
+  artifactKey: Guid(c614ac638f15edd4a92405821c9e6996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_16.asset using Guid(c614ac638f15edd4a92405821c9e6996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bd65a94a792051ebc150fa21b7f23a5') in 0.009752 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_19.asset
+  artifactKey: Guid(a42ebb556f8c1414f9eb28e0f3a880f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_19.asset using Guid(a42ebb556f8c1414f9eb28e0f3a880f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41b7ae0a374465a83ec1e08d3e52a9f0') in 0.010813 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_4.asset
+  artifactKey: Guid(a7961a72cc139634c8e3b35cc4633d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_4.asset using Guid(a7961a72cc139634c8e3b35cc4633d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d477ac1d0c0d0feb23f7ffd28948c0e') in 0.009508 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 6.290525 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_1.asset
+  artifactKey: Guid(6ebdff16edbb86a4d8f6cccfc93b977f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_1.asset using Guid(6ebdff16edbb86a4d8f6cccfc93b977f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '787110f5d9e89e2cbfdcfd3747a69bc7') in 0.009767 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_12.asset
+  artifactKey: Guid(18c21a81d6c39f74c876563a8819e351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_12.asset using Guid(18c21a81d6c39f74c876563a8819e351) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c26a04aaae859feb7867d904d5dfd347') in 0.009933 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_28.asset
+  artifactKey: Guid(7d75958ef751b6e4f8e432fb5bb77abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_28.asset using Guid(7d75958ef751b6e4f8e432fb5bb77abe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '673fe42f94884a0cd145db08000f5952') in 0.007885 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_26.asset
+  artifactKey: Guid(60d0ddb645b0e54439019172138f2162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_26.asset using Guid(60d0ddb645b0e54439019172138f2162) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43e1bc869c6bb1c9395b4a600127ad12') in 0.007978 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_15.asset
+  artifactKey: Guid(832da2153181a6d41ad91baf8199bc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_15.asset using Guid(832da2153181a6d41ad91baf8199bc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8771ede541f5a93eb78d885f237f711c') in 0.008944 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_13.asset
+  artifactKey: Guid(4af209357579d8242bd621bf56833a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_13.asset using Guid(4af209357579d8242bd621bf56833a2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82e18e3c00b194398ae6248cd8884387') in 0.012232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_6.asset
+  artifactKey: Guid(50ccf53802fc3dc488b823e831c4eeac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_6.asset using Guid(50ccf53802fc3dc488b823e831c4eeac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4c98354694acded9f173fd3d425de4a') in 0.010288 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 6.488029 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_1.asset
+  artifactKey: Guid(6ebdff16edbb86a4d8f6cccfc93b977f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_1.asset using Guid(6ebdff16edbb86a4d8f6cccfc93b977f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c40cb764f5b17040f9ff412488c52b1a') in 0.008693 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_9.asset
+  artifactKey: Guid(378ba8008e8cca74daa6a166a9eae513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_9.asset using Guid(378ba8008e8cca74daa6a166a9eae513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4840ac0a07c89afae7441ac9da9f194') in 0.007647 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_4.asset
+  artifactKey: Guid(a7961a72cc139634c8e3b35cc4633d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_4.asset using Guid(a7961a72cc139634c8e3b35cc4633d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99b25863c1a8d64d5945bff4c273ac55') in 0.008775 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_27.asset
+  artifactKey: Guid(0fb4f1e2cbc651449a763d5948b45cab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_27.asset using Guid(0fb4f1e2cbc651449a763d5948b45cab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96dca8f4e17dfe6564e6e9ee2d17541d') in 0.009529 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_21.asset
+  artifactKey: Guid(1fadddc83ac26914bbefc9c869ee5727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_21.asset using Guid(1fadddc83ac26914bbefc9c869ee5727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a61c595e5279e296a0e0f713fde3d5b8') in 0.009118 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_17.asset
+  artifactKey: Guid(019698ce1f2159245a9c15cc7f1a7544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_17.asset using Guid(019698ce1f2159245a9c15cc7f1a7544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1561320f7e234f63b5293bda5ff191a') in 0.009409 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_19.asset
+  artifactKey: Guid(a42ebb556f8c1414f9eb28e0f3a880f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_19.asset using Guid(a42ebb556f8c1414f9eb28e0f3a880f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85311a4f9721ddb768864cb51695a374') in 0.010541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_8.asset
+  artifactKey: Guid(2b0f12fe3a6ad5b41a12ea95e1be3b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_8.asset using Guid(2b0f12fe3a6ad5b41a12ea95e1be3b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a3b206e7f7a1d226e39f35c405be878') in 0.006939 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.396 seconds
+Refreshing native plugins compatible for Editor in 1.09 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.673 seconds
+Domain Reload Profiling: 1066ms
+	BeginReloadAssembly (161ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (130ms)
+		LoadAssemblies (225ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (6ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (674ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (336ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (64ms)
+			ProcessInitializeOnLoadAttributes (203ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 0.92 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1117 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10 unused Assets / (24.4 KB). Loaded Objects now: 1615.
+Memory consumption went from 82.7 MB to 82.7 MB.
+Total: 2.758000 ms (FindLiveObjects: 0.108000 ms CreateObjectMapping: 0.038100 ms MarkObjects: 2.576200 ms  DeleteObjects: 0.034500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.356 seconds
+Refreshing native plugins compatible for Editor in 1.06 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.574 seconds
+Domain Reload Profiling: 926ms
+	BeginReloadAssembly (156ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (116ms)
+		LoadAssemblies (204ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (6ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (574ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (272ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (51ms)
+			ProcessInitializeOnLoadAttributes (165ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 1.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1118 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10 unused Assets / (24.3 KB). Loaded Objects now: 1618.
+Memory consumption went from 84.9 MB to 84.9 MB.
+Total: 3.071600 ms (FindLiveObjects: 0.114500 ms CreateObjectMapping: 0.045600 ms MarkObjects: 2.883300 ms  DeleteObjects: 0.027400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.365 seconds
+Refreshing native plugins compatible for Editor in 0.92 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.563 seconds
+Domain Reload Profiling: 924ms
+	BeginReloadAssembly (155ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (113ms)
+		LoadAssemblies (206ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (6ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (564ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (274ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (47ms)
+			ProcessInitializeOnLoadAttributes (169ms)
+			ProcessInitializeOnLoadMethodAttributes (35ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 1.04 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1118 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10 unused Assets / (24.3 KB). Loaded Objects now: 1621.
+Memory consumption went from 86.8 MB to 86.8 MB.
+Total: 4.285100 ms (FindLiveObjects: 0.142600 ms CreateObjectMapping: 0.067300 ms MarkObjects: 4.030600 ms  DeleteObjects: 0.042900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.335 seconds
+Refreshing native plugins compatible for Editor in 1.25 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.577 seconds
+Domain Reload Profiling: 908ms
+	BeginReloadAssembly (146ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (113ms)
+		LoadAssemblies (192ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (8ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (577ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (273ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (50ms)
+			ProcessInitializeOnLoadAttributes (162ms)
+			ProcessInitializeOnLoadMethodAttributes (35ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 1.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1118 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10 unused Assets / (24.3 KB). Loaded Objects now: 1624.
+Memory consumption went from 88.8 MB to 88.7 MB.
+Total: 2.718700 ms (FindLiveObjects: 0.115000 ms CreateObjectMapping: 0.039800 ms MarkObjects: 2.536500 ms  DeleteObjects: 0.026600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.340 seconds
+Refreshing native plugins compatible for Editor in 1.29 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.560 seconds
+Domain Reload Profiling: 896ms
+	BeginReloadAssembly (145ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (113ms)
+		LoadAssemblies (190ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (8ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (560ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (269ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (52ms)
+			ProcessInitializeOnLoadAttributes (159ms)
+			ProcessInitializeOnLoadMethodAttributes (35ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 1.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1118 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10 unused Assets / (24.3 KB). Loaded Objects now: 1627.
+Memory consumption went from 90.7 MB to 90.6 MB.
+Total: 3.286600 ms (FindLiveObjects: 0.142800 ms CreateObjectMapping: 0.078300 ms MarkObjects: 3.033800 ms  DeleteObjects: 0.030700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.343 seconds
+Refreshing native plugins compatible for Editor in 0.96 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.560 seconds
+Domain Reload Profiling: 899ms
+	BeginReloadAssembly (146ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (107ms)
+		LoadAssemblies (191ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (6ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (561ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (257ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (46ms)
+			ProcessInitializeOnLoadAttributes (154ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 1.15 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1118 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10 unused Assets / (24.4 KB). Loaded Objects now: 1630.
+Memory consumption went from 92.6 MB to 92.6 MB.
+Total: 4.048100 ms (FindLiveObjects: 0.162900 ms CreateObjectMapping: 0.085100 ms MarkObjects: 3.740200 ms  DeleteObjects: 0.058200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.338 seconds
+Refreshing native plugins compatible for Editor in 0.93 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.573 seconds
+Domain Reload Profiling: 907ms
+	BeginReloadAssembly (144ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (108ms)
+		LoadAssemblies (189ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (6ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (574ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (257ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (51ms)
+			ProcessInitializeOnLoadAttributes (150ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 1.74 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1118 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10 unused Assets / (24.3 KB). Loaded Objects now: 1633.
+Memory consumption went from 94.5 MB to 94.5 MB.
+Total: 3.855000 ms (FindLiveObjects: 0.140900 ms CreateObjectMapping: 0.067900 ms MarkObjects: 3.608800 ms  DeleteObjects: 0.036000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.355 seconds
+Refreshing native plugins compatible for Editor in 1.11 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.562 seconds
+Domain Reload Profiling: 913ms
+	BeginReloadAssembly (155ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (115ms)
+		LoadAssemblies (202ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (6ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (563ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (265ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (47ms)
+			ProcessInitializeOnLoadAttributes (164ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 1.79 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1118 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10 unused Assets / (24.4 KB). Loaded Objects now: 1636.
+Memory consumption went from 96.5 MB to 96.4 MB.
+Total: 3.202400 ms (FindLiveObjects: 0.185400 ms CreateObjectMapping: 0.246800 ms MarkObjects: 2.733800 ms  DeleteObjects: 0.035400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.348 seconds
+Refreshing native plugins compatible for Editor in 0.93 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.590 seconds
+Domain Reload Profiling: 934ms
+	BeginReloadAssembly (148ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (118ms)
+		LoadAssemblies (204ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (6ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (591ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (279ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (57ms)
+			ProcessInitializeOnLoadAttributes (165ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1118 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10 unused Assets / (24.3 KB). Loaded Objects now: 1639.
+Memory consumption went from 98.4 MB to 98.4 MB.
+Total: 2.221900 ms (FindLiveObjects: 0.114700 ms CreateObjectMapping: 0.043300 ms MarkObjects: 2.037200 ms  DeleteObjects: 0.026200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.368 seconds
+Refreshing native plugins compatible for Editor in 1.00 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.566 seconds
+Domain Reload Profiling: 930ms
+	BeginReloadAssembly (157ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (114ms)
+		LoadAssemblies (209ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (7ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (566ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (275ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (53ms)
+			ProcessInitializeOnLoadAttributes (163ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 1.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1118 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10 unused Assets / (24.3 KB). Loaded Objects now: 1642.
+Memory consumption went from 100.3 MB to 100.3 MB.
+Total: 3.373700 ms (FindLiveObjects: 0.203400 ms CreateObjectMapping: 0.101900 ms MarkObjects: 3.025600 ms  DeleteObjects: 0.041500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.354 seconds
+Refreshing native plugins compatible for Editor in 1.25 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.622 seconds
+Domain Reload Profiling: 972ms
+	BeginReloadAssembly (155ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (16ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (115ms)
+		LoadAssemblies (200ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (8ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (622ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (291ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (58ms)
+			ProcessInitializeOnLoadAttributes (175ms)
+			ProcessInitializeOnLoadMethodAttributes (35ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 1.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1118 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10 unused Assets / (24.3 KB). Loaded Objects now: 1645.
+Memory consumption went from 102.2 MB to 102.2 MB.
+Total: 2.942200 ms (FindLiveObjects: 0.278400 ms CreateObjectMapping: 0.068400 ms MarkObjects: 2.560900 ms  DeleteObjects: 0.033500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.346 seconds
+Refreshing native plugins compatible for Editor in 1.27 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.609 seconds
+Domain Reload Profiling: 952ms
+	BeginReloadAssembly (149ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (116ms)
+		LoadAssemblies (201ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (8ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (610ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (296ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (57ms)
+			ProcessInitializeOnLoadAttributes (181ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 1.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1118 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10 unused Assets / (24.3 KB). Loaded Objects now: 1648.
+Memory consumption went from 104.2 MB to 104.2 MB.
+Total: 2.938300 ms (FindLiveObjects: 0.126500 ms CreateObjectMapping: 0.063600 ms MarkObjects: 2.716900 ms  DeleteObjects: 0.030200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1140.743031 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_31.asset
+  artifactKey: Guid(6e44a5d51490f264992d51fbafabf0e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_31.asset using Guid(6e44a5d51490f264992d51fbafabf0e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8bff0294dc0417a1d08b923f2ede77e') in 0.094224 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_33.asset
+  artifactKey: Guid(a770772004c628c408a9e60b96bc6cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_33.asset using Guid(a770772004c628c408a9e60b96bc6cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86d7e723455ed32031bce828c2bf100f') in 0.026903 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_37.asset
+  artifactKey: Guid(1645bdcd0a3423b4fabd8bb448d098fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_37.asset using Guid(1645bdcd0a3423b4fabd8bb448d098fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff7c0f56a74a4ee8347fbf502768249e') in 0.017915 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_32.asset
+  artifactKey: Guid(6d94b655f2eceb44aac2c06849b21128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_32.asset using Guid(6d94b655f2eceb44aac2c06849b21128) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c64e83d3770b04272de70a71af0087a6') in 0.019095 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.102604 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_39.asset
+  artifactKey: Guid(baa34329841e1144fa851b30aa5f4704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_39.asset using Guid(baa34329841e1144fa851b30aa5f4704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74cc0387595ce2dfc017c021d239a530') in 0.018613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_40.asset
+  artifactKey: Guid(e05de50cecefb9c49a35eb9529e85f37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_40.asset using Guid(e05de50cecefb9c49a35eb9529e85f37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a05ea1be537fb35f2792337d2b430479') in 0.022651 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_45.asset
+  artifactKey: Guid(ee187491799e1be4c8dc4aeff488a0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_45.asset using Guid(ee187491799e1be4c8dc4aeff488a0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff820d058ec840b857d9d22a6ec2e8bb') in 0.020545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_49.asset
+  artifactKey: Guid(4a90df3f452d3614c85a2f94104aa9bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_49.asset using Guid(4a90df3f452d3614c85a2f94104aa9bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '652b74e9e9ba61bc6c531b9895ef40ce') in 0.019974 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_48.asset
+  artifactKey: Guid(caf08364cbd1c964eac2858691e91240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_48.asset using Guid(caf08364cbd1c964eac2858691e91240) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04302e45c5db87333bd867200629d968') in 0.018793 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_44.asset
+  artifactKey: Guid(045bd72d06226d84f8173e2b146f1198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_44.asset using Guid(045bd72d06226d84f8173e2b146f1198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aa772cab90cdabba37610383e44607b') in 0.018754 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.399027 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_51.asset
+  artifactKey: Guid(246487af9a3b38b4bb9eea66f8a3eb22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_51.asset using Guid(246487af9a3b38b4bb9eea66f8a3eb22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95b70e9d55006e60482e2f341ca7b661') in 0.020784 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_53.asset
+  artifactKey: Guid(e9e9be2136b958547b909a3369890bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_53.asset using Guid(e9e9be2136b958547b909a3369890bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7745280dca493002fed173aab7421f1c') in 0.021791 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_52.asset
+  artifactKey: Guid(87625504f221263468a7b46a290b859e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_52.asset using Guid(87625504f221263468a7b46a290b859e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed0192c0f9a150852ed6228ebc6ef16') in 0.023129 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.001088 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_57.asset
+  artifactKey: Guid(a3108040db3e34840af0c39ec9be9143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_57.asset using Guid(a3108040db3e34840af0c39ec9be9143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ab905fe005939c23bf283a5aa2e0eff') in 0.023076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_58.asset
+  artifactKey: Guid(8d584a3d66035544ba153070cd433d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_58.asset using Guid(8d584a3d66035544ba153070cd433d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ba78eef5d1bbdb62ec32a4ec19d18d2') in 0.025451 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_60.asset
+  artifactKey: Guid(9b864dad74dbe6c47a5bdd4487a8e93d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_60.asset using Guid(9b864dad74dbe6c47a5bdd4487a8e93d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f3e4b7f1ff99dfcaa5d736d6cbcda20') in 0.026359 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.172231 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_63.asset
+  artifactKey: Guid(6f074b5769da83d489ed71d0f39bb3dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_63.asset using Guid(6f074b5769da83d489ed71d0f39bb3dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '598dcf2dc42714624712a8b8e24ac30b') in 0.025702 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_67.asset
+  artifactKey: Guid(0c905acd23eb36a4f9fa39ce073e92e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_67.asset using Guid(0c905acd23eb36a4f9fa39ce073e92e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2cef59a7ba6c6c2d24e9e3e05526ea8') in 0.020056 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_71.asset
+  artifactKey: Guid(64446d0d65fab344385535cfb2850996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_71.asset using Guid(64446d0d65fab344385535cfb2850996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '322a87a2f78f9df06a0ba3958b0e6e1a') in 0.028653 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_73.asset
+  artifactKey: Guid(b950dd40cb97ad44e92fa1c16d2f5ca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_73.asset using Guid(b950dd40cb97ad44e92fa1c16d2f5ca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e12cc0239c2e9602f2d5e4774772028c') in 0.023146 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_70.asset
+  artifactKey: Guid(b828e1d580c77ef46aaf0b5e046f4bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_70.asset using Guid(b828e1d580c77ef46aaf0b5e046f4bb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae5ea69b6522d732eb8f284e582667b3') in 0.015842 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.198504 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_75.asset
+  artifactKey: Guid(fff2c024e47fe7e479e897da4bf30c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_75.asset using Guid(fff2c024e47fe7e479e897da4bf30c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acb8e144824e733987f078a9f8308086') in 0.024354 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_79.asset
+  artifactKey: Guid(43643cba009d1964898ac25284a616f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_79.asset using Guid(43643cba009d1964898ac25284a616f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a360302cdf053367e078d8bc969b03e4') in 0.017183 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.638961 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_81.asset
+  artifactKey: Guid(28e18b18b15f99749bdfb0fcd801c1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_81.asset using Guid(28e18b18b15f99749bdfb0fcd801c1f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bca047c4ab1e2e3f0b9d39f18eb5483a') in 0.025410 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.397580 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_87.asset
+  artifactKey: Guid(899b9050fbde59b4d8f47504d85e6a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_87.asset using Guid(899b9050fbde59b4d8f47504d85e6a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cb2b780cb8e47fa5a85ff26415cba2c') in 0.029025 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_91.asset
+  artifactKey: Guid(0ecffb688ba831344863545a0010cc02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_91.asset using Guid(0ecffb688ba831344863545a0010cc02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a97d8125993c6adf043c05d463bf618') in 0.014950 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.017179 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_93.asset
+  artifactKey: Guid(79220429b171cb94f8137e5fd2b3a70c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_93.asset using Guid(79220429b171cb94f8137e5fd2b3a70c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c920d418aa4dd45ee3f144dba6f4af8') in 0.027886 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_99.asset
+  artifactKey: Guid(2b9dc2d50e92fea43b1f16df3f68196c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_99.asset using Guid(2b9dc2d50e92fea43b1f16df3f68196c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31218a4caa13ea83722eb877deb1ee6d') in 0.021084 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_100.asset
+  artifactKey: Guid(dfc097d6373cb0947be503468e5a2e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_100.asset using Guid(dfc097d6373cb0947be503468e5a2e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd31527b8989fd1d99b39b70132503960') in 0.019206 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.459022 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_105.asset
+  artifactKey: Guid(83358dca8203fc749913c6e49da49a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_105.asset using Guid(83358dca8203fc749913c6e49da49a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76dbc14a438825f93b12cd188b8898c0') in 0.025232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.078402 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_111.asset
+  artifactKey: Guid(4be23401aa9eb9b41b80d0b6995560d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_111.asset using Guid(4be23401aa9eb9b41b80d0b6995560d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af92e2d354f0c8d70508f6438bb00de1') in 0.024482 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.337668 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_117.asset
+  artifactKey: Guid(2a0bbff6f83b1b246a64aebc8f54ea38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_117.asset using Guid(2a0bbff6f83b1b246a64aebc8f54ea38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e527f0064643eb99fb6b88c9bb439e2') in 0.026482 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_122.asset
+  artifactKey: Guid(f65bf15a1da533b4895b7791f5b7f10b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_122.asset using Guid(f65bf15a1da533b4895b7791f5b7f10b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4bd36015e64dd7554eec69dac1fac12') in 0.024003 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_125.asset
+  artifactKey: Guid(3321e282e579f6e4b90c31773d602dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_125.asset using Guid(3321e282e579f6e4b90c31773d602dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e8a4ecb05741862dbece28ae682482f') in 0.020181 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.010581 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_129.asset
+  artifactKey: Guid(b675b9bab4ea68b4f9014929d821e97b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_129.asset using Guid(b675b9bab4ea68b4f9014929d821e97b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd80ffa65717345f94b4026b020968904') in 0.023361 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_133.asset
+  artifactKey: Guid(fe67edb96207b2f4dbef460f7074ff67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_133.asset using Guid(fe67edb96207b2f4dbef460f7074ff67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '372fda510f319676f142811a148b7c1d') in 0.016919 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.368389 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_135.asset
+  artifactKey: Guid(56ddd37d8d65e6743ad992d48d60a787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_135.asset using Guid(56ddd37d8d65e6743ad992d48d60a787) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c495cf913ec8aecfe55507e02ba53036') in 0.031095 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.573139 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_141.asset
+  artifactKey: Guid(5c6538a0bf22a874aabd064dfa6c8ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_141.asset using Guid(5c6538a0bf22a874aabd064dfa6c8ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7c88f86623941c55957db4fa56969fa') in 0.024463 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.047150 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_147.asset
+  artifactKey: Guid(8c49650b35d45d4438f387af48d4a731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_147.asset using Guid(8c49650b35d45d4438f387af48d4a731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8963a6a88cb4aa9329aa733737a7049') in 0.028613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.346901 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_153.asset
+  artifactKey: Guid(401f537f2863a4540a4d00e1c44898d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_153.asset using Guid(401f537f2863a4540a4d00e1c44898d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '901c3838129cc913610ab244ac48d568') in 0.026749 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.030396 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_159.asset
+  artifactKey: Guid(141a4e8d17af3824481fea3a3fa3ffb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_159.asset using Guid(141a4e8d17af3824481fea3a3fa3ffb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be32beff120a3ffb06abbd791549614a') in 0.024699 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.038858 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_165.asset
+  artifactKey: Guid(4b00d57e25cb1534dbe5d0de94376fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_165.asset using Guid(4b00d57e25cb1534dbe5d0de94376fea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f1d8792c620ed9802c313373b20cec0') in 0.023742 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.440 seconds
+Refreshing native plugins compatible for Editor in 1.45 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.750 seconds
+Domain Reload Profiling: 1185ms
+	BeginReloadAssembly (179ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (55ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (144ms)
+		LoadAssemblies (247ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (750ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (347ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (73ms)
+			ProcessInitializeOnLoadAttributes (198ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (18ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 1.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1117 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10 unused Assets / (24.3 KB). Loaded Objects now: 1654.
+Memory consumption went from 105.9 MB to 105.8 MB.
+Total: 2.591900 ms (FindLiveObjects: 0.153600 ms CreateObjectMapping: 0.079800 ms MarkObjects: 2.325300 ms  DeleteObjects: 0.032200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: A operação de E/S foi anulada devido a uma saída de thread ou a uma requisição de aplicativo.
 AssetImportWorker is now disconnected from the server
