@@ -1744,3 +1744,852 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.359 seconds
+Refreshing native plugins compatible for Editor in 0.92 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.541 seconds
+Domain Reload Profiling: 896ms
+	BeginReloadAssembly (156ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (116ms)
+		LoadAssemblies (209ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (6ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (541ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (248ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (47ms)
+			ProcessInitializeOnLoadAttributes (145ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 1.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1118 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10 unused Assets / (24.3 KB). Loaded Objects now: 1751.
+Memory consumption went from 127.8 MB to 127.7 MB.
+Total: 2.526100 ms (FindLiveObjects: 0.128600 ms CreateObjectMapping: 0.048000 ms MarkObjects: 2.316900 ms  DeleteObjects: 0.031600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1207.773657 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_719.asset
+  artifactKey: Guid(a37c484ae022a0946bd7535593918c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_719.asset using Guid(a37c484ae022a0946bd7535593918c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24aaa2e4102553c946b0826d27cbbb01') in 0.090530 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_724.asset
+  artifactKey: Guid(e033ef64905f93544a72d78612d4ca16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_724.asset using Guid(e033ef64905f93544a72d78612d4ca16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3d01501382bb2ba790114f7174f1ef8') in 0.024680 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_727.asset
+  artifactKey: Guid(bbad19a2560fd7547953ad7652c969f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_727.asset using Guid(bbad19a2560fd7547953ad7652c969f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80a179f23f5bf86a3f64182645dc29eb') in 0.020357 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_730.asset
+  artifactKey: Guid(63114b786eca40549a1b0f54d9d4e8de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_730.asset using Guid(63114b786eca40549a1b0f54d9d4e8de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '596e00cfa7e5c30f5f54b9f06e73fd48') in 0.018277 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_732.asset
+  artifactKey: Guid(91226f00cf260d241b5a368c7fa55fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_732.asset using Guid(91226f00cf260d241b5a368c7fa55fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d5f022351273687441ebc96d7fb62ef') in 0.020166 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_721.asset
+  artifactKey: Guid(31f359b472762d042b159de62809eab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_721.asset using Guid(31f359b472762d042b159de62809eab8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97d112194b144353ae7b24f4ba789e14') in 0.018150 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_737.asset
+  artifactKey: Guid(827cc62aef2cd2e43b79562554ae13b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_737.asset using Guid(827cc62aef2cd2e43b79562554ae13b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '802ec243fdd144a8db750c250dfb01f9') in 0.017138 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_739.asset
+  artifactKey: Guid(4f4297ed341b66744aba284a0e941ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_739.asset using Guid(4f4297ed341b66744aba284a0e941ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a71c7b10128cc9125dcfdce8d0785519') in 0.015501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_742.asset
+  artifactKey: Guid(7d7b2bbcd3bc68947a84ed132611607f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_742.asset using Guid(7d7b2bbcd3bc68947a84ed132611607f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cf08684f38d47ee7371c10c4c3a69f4') in 0.015836 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_743.asset
+  artifactKey: Guid(4f11b1a8993250943b2d978220aee732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_743.asset using Guid(4f11b1a8993250943b2d978220aee732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33f879921d9a52b1ccca7089fc4a7be9') in 0.013493 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_747.asset
+  artifactKey: Guid(39fdc85f5413be348b11f7dddbd44f76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_747.asset using Guid(39fdc85f5413be348b11f7dddbd44f76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a649496334d7775749da6902df9a8d1') in 0.014580 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_749.asset
+  artifactKey: Guid(9a73be467041d9144843c95a277363e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_749.asset using Guid(9a73be467041d9144843c95a277363e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42a4a27d14c566853ff7ef6fd38873fe') in 0.009786 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_750.asset
+  artifactKey: Guid(fadddf402f7025f47a3326c6926b755d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_750.asset using Guid(fadddf402f7025f47a3326c6926b755d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7177c05d458ed924c6ade9c2548db286') in 0.011078 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_753.asset
+  artifactKey: Guid(a3e7c4a85a5d04c4395042de6f0001c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_753.asset using Guid(a3e7c4a85a5d04c4395042de6f0001c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '194495339677c248b8483a059025e36e') in 0.015228 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_755.asset
+  artifactKey: Guid(0542814d28a134a4fb3a520c7caeea70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_755.asset using Guid(0542814d28a134a4fb3a520c7caeea70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7488b8e89c4bbe7c2aabd7a02a238b68') in 0.014629 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_758.asset
+  artifactKey: Guid(599f753d3346ec14894e7b56e44f63f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_758.asset using Guid(599f753d3346ec14894e7b56e44f63f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dc5eb53f6305a5dbe292dd04065bba5') in 0.015999 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_760.asset
+  artifactKey: Guid(3350ca04b88365840803b2f3493f4c28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_760.asset using Guid(3350ca04b88365840803b2f3493f4c28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '096a514f72c0038a9cb2f22055d109b1') in 0.014301 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_759.asset
+  artifactKey: Guid(1c28609bdcb79cd46b27b271e2cbe083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_759.asset using Guid(1c28609bdcb79cd46b27b271e2cbe083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17634282e9d9be2cca8f9519d9cebe43') in 0.014999 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_765.asset
+  artifactKey: Guid(1f918519380f03d4796ca99c618cfbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_765.asset using Guid(1f918519380f03d4796ca99c618cfbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eb75fcf9f8a13c0bac65765233446e4') in 0.014638 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_767.asset
+  artifactKey: Guid(b8b8c289298510d439f0902d9f1133e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_767.asset using Guid(b8b8c289298510d439f0902d9f1133e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '794f3ff1fb76a54f50cf52783effdeca') in 0.014278 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_769.asset
+  artifactKey: Guid(1367d9d554309e2488ac78f2f4d5e1b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_769.asset using Guid(1367d9d554309e2488ac78f2f4d5e1b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95ce8f38f636b13daba48c7ee15b64cd') in 0.009388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_771.asset
+  artifactKey: Guid(2323d8bb64bdca04a888fefdac0e1d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_771.asset using Guid(2323d8bb64bdca04a888fefdac0e1d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cf6267a01e1a3f37dc59ccb63c68208') in 0.017782 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_745.asset
+  artifactKey: Guid(e191c3786033e7e409dc855d341bf094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_745.asset using Guid(e191c3786033e7e409dc855d341bf094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c55c407e2dff796f42ead71dab81d2a9') in 0.015779 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1556.asset
+  artifactKey: Guid(db52c231eeabd5a4d82e231c2ed337bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1556.asset using Guid(db52c231eeabd5a4d82e231c2ed337bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa3ba743e41e98d16c7cc72292e1d4b9') in 0.016297 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1559.asset
+  artifactKey: Guid(ec2ce6bf4c0a02e4a8a797f77198c135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1559.asset using Guid(ec2ce6bf4c0a02e4a8a797f77198c135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7129efefb7ece3d4d42a4ced406293a3') in 0.017388 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1561.asset
+  artifactKey: Guid(e74bf4fb893e5734d822c4edd418f31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1561.asset using Guid(e74bf4fb893e5734d822c4edd418f31a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58de7194f8049a46d075cc80f673fbab') in 0.013887 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1564.asset
+  artifactKey: Guid(37749550031a6cf4b8b208e8f1e748e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1564.asset using Guid(37749550031a6cf4b8b208e8f1e748e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe8f1ea695907c9963b6086abc46e452') in 0.014305 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1557.asset
+  artifactKey: Guid(9283dcfcf67124b489babae097c8f5c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1557.asset using Guid(9283dcfcf67124b489babae097c8f5c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54b98c33581cd34a66e2c1bf3e470f41') in 0.015113 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1566.asset
+  artifactKey: Guid(ffe580a94356bb543946cc7bbca27196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1566.asset using Guid(ffe580a94356bb543946cc7bbca27196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eefc0a674455e5ae0e52eca3fd022b87') in 0.015504 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1571.asset
+  artifactKey: Guid(0c63a6340e904d140874ac36a363928b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1571.asset using Guid(0c63a6340e904d140874ac36a363928b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '019ccbd3d8921ed6227a9b2253c24160') in 0.016716 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1573.asset
+  artifactKey: Guid(410b8240abe21ac41958163962e05796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1573.asset using Guid(410b8240abe21ac41958163962e05796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10c47394db4dd9b22fc35db3c5e55b00') in 0.016363 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1576.asset
+  artifactKey: Guid(81e4e54041cb5b447b98f251e5900cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1576.asset using Guid(81e4e54041cb5b447b98f251e5900cfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd3a2d8be4d5f3fe9c1da3e9223eaf2e') in 0.018244 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1579.asset
+  artifactKey: Guid(5a94a4c54e0dfee4e8e1abf7b5a62506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1579.asset using Guid(5a94a4c54e0dfee4e8e1abf7b5a62506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd99185801fa843221570e4a88e011b0c') in 0.017350 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1581.asset
+  artifactKey: Guid(f5beb6a1cfdc50b4e81667c6c4784527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1581.asset using Guid(f5beb6a1cfdc50b4e81667c6c4784527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37e211679fe7f7b3897be9bccefa1cf9') in 0.016541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1583.asset
+  artifactKey: Guid(8611e46a8914b0f4582c3be77bdb08a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1583.asset using Guid(8611e46a8914b0f4582c3be77bdb08a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b41e53024039bbd50ed7b162fd3079c') in 0.017491 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1586.asset
+  artifactKey: Guid(c99768bbf1813154aba98bb8e86633e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1586.asset using Guid(c99768bbf1813154aba98bb8e86633e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b6022b22931b6442b21634e00ed7a8b') in 0.018084 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1589.asset
+  artifactKey: Guid(6d3d956d2f6dce64e82e09dee8e963e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1589.asset using Guid(6d3d956d2f6dce64e82e09dee8e963e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51ad5973e732701e0cac5a8cec773c26') in 0.015938 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1591.asset
+  artifactKey: Guid(dd236e684d17c384dbe12b4af412bccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1591.asset using Guid(dd236e684d17c384dbe12b4af412bccc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43069e8f611498282d2ba861eea63387') in 0.017379 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1593.asset
+  artifactKey: Guid(9c43e8bfb13a6bc49b2af96007897535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1593.asset using Guid(9c43e8bfb13a6bc49b2af96007897535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16e4101806c0eee82bc2457ce1d18076') in 0.011682 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1578.asset
+  artifactKey: Guid(83179c335e514364d8b213d40d49dd05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1578.asset using Guid(83179c335e514364d8b213d40d49dd05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0be0b0beaa8f85561f1d55fc15bc34d5') in 0.017949 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1597.asset
+  artifactKey: Guid(f5068477c7e92af48a2e75c0064f5d19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1597.asset using Guid(f5068477c7e92af48a2e75c0064f5d19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f18f06db5081f5ce741c8462bea8f50') in 0.020729 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1600.asset
+  artifactKey: Guid(f486986c08d5e7840a3b9933991d2a6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1600.asset using Guid(f486986c08d5e7840a3b9933991d2a6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ddaf7d629dbb0c6390232e306f28b35') in 0.019104 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1603.asset
+  artifactKey: Guid(a8a95248777cd4a4091f5d9e6289d9aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1603.asset using Guid(a8a95248777cd4a4091f5d9e6289d9aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2c55dce2e8c53f238b6601a75c52347') in 0.019531 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1605.asset
+  artifactKey: Guid(c622c9c2eb585c342871f1ec5391e4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1605.asset using Guid(c622c9c2eb585c342871f1ec5391e4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d145bf2663c63dff90b2ad8c802a313') in 0.017199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1607.asset
+  artifactKey: Guid(2811b27ee43519d41948aeb3c0b137a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1607.asset using Guid(2811b27ee43519d41948aeb3c0b137a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '554c6c669c314cbafdfcdb196c8b581c') in 0.021289 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1608.asset
+  artifactKey: Guid(2774e0c6119132e4ebbfe5c856909c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1608.asset using Guid(2774e0c6119132e4ebbfe5c856909c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46789b8bf4e0640f80eef68cada57b5a') in 0.016938 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1754.asset
+  artifactKey: Guid(eb03e064f3cb5a648aa58b8f1376b1c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1754.asset using Guid(eb03e064f3cb5a648aa58b8f1376b1c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91e315b63cb0849c83c252f0cf5fdc02') in 0.017391 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1756.asset
+  artifactKey: Guid(984e56c64812fe146847e12c78fc530d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1756.asset using Guid(984e56c64812fe146847e12c78fc530d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3aa64c423662e1c50d542ffc4eac6f5') in 0.019859 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1757.asset
+  artifactKey: Guid(806123f1ae8094546b4d415b4b0d374e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1757.asset using Guid(806123f1ae8094546b4d415b4b0d374e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfc7dfdf18bcdd42c35ffb4d1e2fce69') in 0.016602 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1761.asset
+  artifactKey: Guid(1fd7f1134969dab47a73ad3b0ba9b858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1761.asset using Guid(1fd7f1134969dab47a73ad3b0ba9b858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd64c72a6af1e0f906937c53fdddea07b') in 0.016684 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1762.asset
+  artifactKey: Guid(3ee10a99073bfec47a2675d96d5c7fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1762.asset using Guid(3ee10a99073bfec47a2675d96d5c7fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e4c2061d41a4195dd894b3eb26058eb') in 0.021535 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1764.asset
+  artifactKey: Guid(3c44241760c0c82459b29e5309dfd5bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1764.asset using Guid(3c44241760c0c82459b29e5309dfd5bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfe35e19bb0160c6f3fe7033a9303801') in 0.021484 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1769.asset
+  artifactKey: Guid(b7973e82d4e424f41a856793fdc45b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1769.asset using Guid(b7973e82d4e424f41a856793fdc45b40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2db4fc8fe1a182daa2479319027b9501') in 0.020342 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1771.asset
+  artifactKey: Guid(20677f6774b01cf42a14f50aa41603fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1771.asset using Guid(20677f6774b01cf42a14f50aa41603fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c82aea5f8c08293b428fce04f729d904') in 0.012428 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1595.asset
+  artifactKey: Guid(80c71e91462b0404a944d21e557de9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1595.asset using Guid(80c71e91462b0404a944d21e557de9b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '972caf975d86b9ef006c01353dfd97b6') in 0.020209 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1775.asset
+  artifactKey: Guid(2b94ac50c63bdfd4a80eff89181e2da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1775.asset using Guid(2b94ac50c63bdfd4a80eff89181e2da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e5e34f15628be0e3a9065fb1ded9143') in 0.020295 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1778.asset
+  artifactKey: Guid(7336c0c983544274bb6169175ef4b05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1778.asset using Guid(7336c0c983544274bb6169175ef4b05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2679f94e93b3a55eeb1617069501af2d') in 0.020801 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1773.asset
+  artifactKey: Guid(4ce947ba4d3dfcb44a37a76f6d378d0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1773.asset using Guid(4ce947ba4d3dfcb44a37a76f6d378d0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df1c31e340625a0d95169529efb859c7') in 0.011752 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1766.asset
+  artifactKey: Guid(ace5cd06318e0874e9e9b52068767f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1766.asset using Guid(ace5cd06318e0874e9e9b52068767f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd00906df752598ca0c1c5fe7b84a2ee4') in 0.016379 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1784.asset
+  artifactKey: Guid(94c7714782b4e8c4f9bcb793f7937f43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1784.asset using Guid(94c7714782b4e8c4f9bcb793f7937f43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '584a2c89d197bf8787d31635b1b992aa') in 0.021267 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_725.asset
+  artifactKey: Guid(05619c5b82edf0744a061cecabf56d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_725.asset using Guid(05619c5b82edf0744a061cecabf56d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '724b0c2f4dff817a012ff4f6a1626479') in 0.020656 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1788.asset
+  artifactKey: Guid(98b01c5d36a4b0648a9a718cc1ea30b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1788.asset using Guid(98b01c5d36a4b0648a9a718cc1ea30b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab34154c4421fd14d3ce95377116d50c') in 0.022094 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_726.asset
+  artifactKey: Guid(273a1450b246f3e4180a7c6c8a6c12ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_726.asset using Guid(273a1450b246f3e4180a7c6c8a6c12ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd08cac8120a829157fe975607099b13e') in 0.023605 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1780.asset
+  artifactKey: Guid(3ef6978abfd9f0d4c96baf8cb022be72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1780.asset using Guid(3ef6978abfd9f0d4c96baf8cb022be72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8047818ad79cfcb3ec34043d2655ae9') in 0.020040 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1779.asset
+  artifactKey: Guid(be7b9aa8134cb7d4a8aa051d6a7f745f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1779.asset using Guid(be7b9aa8134cb7d4a8aa051d6a7f745f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '088fd42876c4e69b3fb6082bc09ca227') in 0.020483 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1781.asset
+  artifactKey: Guid(6e4b13237131f144cbda77e5c2b45854) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1781.asset using Guid(6e4b13237131f144cbda77e5c2b45854) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99b04bf7feb78d000b6443da7c8114f3') in 0.013535 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1602.asset
+  artifactKey: Guid(4051f91bdb0ca844a99e2fb0eabf6370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1602.asset using Guid(4051f91bdb0ca844a99e2fb0eabf6370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04aa8b3a155c66535535e2ba0ef1491b') in 0.023596 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_766.asset
+  artifactKey: Guid(7e9f6a1e4c2d1154c91f5b6624e67604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_766.asset using Guid(7e9f6a1e4c2d1154c91f5b6624e67604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3737e1737b65b10e1c591b7b55a3f00') in 0.022158 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1563.asset
+  artifactKey: Guid(44ef82dd6f465a2438429c04acd0fa45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1563.asset using Guid(44ef82dd6f465a2438429c04acd0fa45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a78b43d1ce101123c107f4b9908fdb9a') in 0.023474 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_752.asset
+  artifactKey: Guid(21c9b91ceb36e1942925b06d50acfc20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_752.asset using Guid(21c9b91ceb36e1942925b06d50acfc20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd55a3d4f26a23fb746ea45f734f1ff27') in 0.021288 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1785.asset
+  artifactKey: Guid(c87115973c056ea408685c8dc9e8fd67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1785.asset using Guid(c87115973c056ea408685c8dc9e8fd67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc5968d132dbff13da877209d6e24f68') in 0.022329 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_748.asset
+  artifactKey: Guid(397842e6d361e6846a4302f1fd9a8229) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_748.asset using Guid(397842e6d361e6846a4302f1fd9a8229) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a5544502ac52f568bc2a71025a9744b') in 0.014778 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_1782.asset
+  artifactKey: Guid(b91649a2d53553f49a78c74f013e4f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_1782.asset using Guid(b91649a2d53553f49a78c74f013e4f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '641d7de6c853f374f338b0d9aaeb7f0c') in 0.024039 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PlatformerSet1/main_lev_build 1_729.asset
+  artifactKey: Guid(885f3bb14f663df42aa199f2fe573026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/main_lev_build 1_729.asset using Guid(885f3bb14f663df42aa199f2fe573026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d97aad6c3b1ca96607992a44615108b') in 0.019255 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.817559 seconds.
+  path: Assets/Pack 01 (Pixel Art)/PNG/Desk Lamp 2.png
+  artifactKey: Guid(6e3d3a4a64c68d744af8f2ccd0f2d64e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pack 01 (Pixel Art)/PNG/Desk Lamp 2.png using Guid(6e3d3a4a64c68d744af8f2ccd0f2d64e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbe5ef30281606b8a4f9f67b16d8f076') in 0.054702 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Pack 01 (Pixel Art)/PNG/Door 2.png
+  artifactKey: Guid(adbe9f7ead01e794581828875ddd83d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pack 01 (Pixel Art)/PNG/Door 2.png using Guid(adbe9f7ead01e794581828875ddd83d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62ae60efeab8ab4f2cdc9bfa6e2a888f') in 0.030182 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.468727 seconds.
+  path: Assets/Pack 01 (Pixel Art)/PNG/Doors 2.png
+  artifactKey: Guid(59d3306839c844148bad24ded32c5357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pack 01 (Pixel Art)/PNG/Doors 2.png using Guid(59d3306839c844148bad24ded32c5357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be1fe875d113af2f130eac6702a8cfe2') in 0.053197 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Pack 01 (Pixel Art)/PNG/Enter 2.png
+  artifactKey: Guid(11c99634c24f46040b1ba2c40697d982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pack 01 (Pixel Art)/PNG/Enter 2.png using Guid(11c99634c24f46040b1ba2c40697d982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bd13c6c82bfbe94358291c0b763aca0') in 0.029012 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.286177 seconds.
+  path: Assets/Pack 01 (Pixel Art)/PNG/Pipe2.png
+  artifactKey: Guid(502e4ead45681b947ad2da998311905f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pack 01 (Pixel Art)/PNG/Pipe2.png using Guid(502e4ead45681b947ad2da998311905f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1028a8eefe3d9eb7aec1836029b2e97c') in 0.022109 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Pack 01 (Pixel Art)/PNG/Props 2.png
+  artifactKey: Guid(580cc8eada513fe4cb569f60a7287108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pack 01 (Pixel Art)/PNG/Props 2.png using Guid(580cc8eada513fe4cb569f60a7287108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb4357518d46ac125f93974da7181be') in 0.027116 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.033079 seconds.
+  path: Assets/Pack 01 (Pixel Art)/PNG/Screen info 1.png
+  artifactKey: Guid(5b86d46f449e30149887c0c91251f604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pack 01 (Pixel Art)/PNG/Screen info 1.png using Guid(5b86d46f449e30149887c0c91251f604) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fec7b1db162dadfbfacb544ad7065ec') in 0.020876 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.004816 seconds.
+  path: Assets/Pack 01 (Pixel Art)/PNG/Semi-wall 2.png
+  artifactKey: Guid(1b4579f1901e4f64c941a81a32e59d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pack 01 (Pixel Art)/PNG/Semi-wall 2.png using Guid(1b4579f1901e4f64c941a81a32e59d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa7c7b3f06764860b9481f5f60a4468') in 0.022804 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.199515 seconds.
+  path: Assets/Pack 01 (Pixel Art)/PNG/Seperation wall 2.png
+  artifactKey: Guid(7966ef41ec7a8634199724961076608d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pack 01 (Pixel Art)/PNG/Seperation wall 2.png using Guid(7966ef41ec7a8634199724961076608d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b65e587734dffa6e6497a0d5d9164241') in 0.020452 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.005753 seconds.
+  path: Assets/Pack 01 (Pixel Art)/PNG/Small Machine 3.png
+  artifactKey: Guid(054b1d3d8f710b64c8c20c220b8b7ca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pack 01 (Pixel Art)/PNG/Small Machine 3.png using Guid(054b1d3d8f710b64c8c20c220b8b7ca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b12cef2f4f97ccc29914ec05c3f4756') in 0.022131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.023654 seconds.
+  path: Assets/Pack 01 (Pixel Art)/PNG/Stairs 3.png
+  artifactKey: Guid(bc58d6be3a1dc3c4fbf628fd971d5dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pack 01 (Pixel Art)/PNG/Stairs 3.png using Guid(bc58d6be3a1dc3c4fbf628fd971d5dca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2b56133f8bf486bda9c44413af80a3b') in 0.025308 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003878 seconds.
+  path: Assets/Pack 01 (Pixel Art)/PNG/Teleportation.png
+  artifactKey: Guid(11a0abfa311cad64ab2cc7fafcbaa81f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pack 01 (Pixel Art)/PNG/Teleportation.png using Guid(11a0abfa311cad64ab2cc7fafcbaa81f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86fa10f0207bf862e0bd40e2a9f4ed6d') in 0.026304 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003403 seconds.
+  path: Assets/Pack 01 (Pixel Art)/PNG/Wall 3.png
+  artifactKey: Guid(0222c73701782564bbafc90dc320756d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pack 01 (Pixel Art)/PNG/Wall 3.png using Guid(0222c73701782564bbafc90dc320756d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da9fecab643715ff080424d83ae0f27e') in 0.024427 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.007133 seconds.
+  path: Assets/Pack 01 (Pixel Art)/PNG/Wall 6.png
+  artifactKey: Guid(660e3cbbb38ae824298f1d63e3c06c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pack 01 (Pixel Art)/PNG/Wall 6.png using Guid(660e3cbbb38ae824298f1d63e3c06c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e355159744b44f17dd6b5abc33abc2a2') in 0.028136 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.034614 seconds.
+  path: Assets/Pack 01 (Pixel Art)/PNG/Wall cover 2 copie.png
+  artifactKey: Guid(521fbbf141ed21846b4c4c742ce7943f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pack 01 (Pixel Art)/PNG/Wall cover 2 copie.png using Guid(521fbbf141ed21846b4c4c742ce7943f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4163f7a84ca9d55ac203314bedd80d26') in 0.024633 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.003067 seconds.
+  path: Assets/Pack 01 (Pixel Art)/PNG/Wall electric pannel 1.png
+  artifactKey: Guid(de8dbd7018034d740a804c2520f6f927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pack 01 (Pixel Art)/PNG/Wall electric pannel 1.png using Guid(de8dbd7018034d740a804c2520f6f927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c4b1d23d423a4ae113896f5bb8d5860') in 0.027134 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.463 seconds
+Refreshing native plugins compatible for Editor in 1.01 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.801 seconds
+Domain Reload Profiling: 1260ms
+	BeginReloadAssembly (196ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (152ms)
+		LoadAssemblies (266ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (8ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (802ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (397ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (65ms)
+			ProcessInitializeOnLoadAttributes (251ms)
+			ProcessInitializeOnLoadMethodAttributes (50ms)
+			AfterProcessingInitializeOnLoad (20ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 2.04 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1117 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10 unused Assets / (24.4 KB). Loaded Objects now: 1795.
+Memory consumption went from 129.6 MB to 129.6 MB.
+Total: 4.709900 ms (FindLiveObjects: 0.198500 ms CreateObjectMapping: 0.112500 ms MarkObjects: 4.356100 ms  DeleteObjects: 0.041500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: A operação de E/S foi anulada devido a uma saída de thread ou a uma requisição de aplicativo.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
