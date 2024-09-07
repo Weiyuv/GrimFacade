@@ -1974,3 +1974,11 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 295.890893 seconds.
+  path: Assets/Material/New Material 1.mat
+  artifactKey: Guid(90dac9da6411bbf4584a0e51206d7da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/New Material 1.mat using Guid(90dac9da6411bbf4584a0e51206d7da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '678591312ed2492fa339db7ee3ec066e') in 0.108816 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
