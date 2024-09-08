@@ -289,6 +289,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1795698954199804, guid: d42a24c9cbd336e46aa519ab65fd03d8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1989187543047504, guid: d42a24c9cbd336e46aa519ab65fd03d8, type: 3}
       propertyPath: m_Name
       value: PlayerMM
@@ -343,11 +347,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4939056149151732, guid: d42a24c9cbd336e46aa519ab65fd03d8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.306
+      value: 0.309
       objectReference: {fileID: 0}
     - target: {fileID: 4939056149151732, guid: d42a24c9cbd336e46aa519ab65fd03d8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.088
+      value: 0.104
       objectReference: {fileID: 0}
     - target: {fileID: 4939056149151732, guid: d42a24c9cbd336e46aa519ab65fd03d8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -388,6 +392,11 @@ PrefabInstance:
       propertyPath: anima
       value: 
       objectReference: {fileID: 844091537}
+    - target: {fileID: 198825090059282404, guid: d42a24c9cbd336e46aa519ab65fd03d8,
+        type: 3}
+      propertyPath: SubModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 198825090059282404, guid: d42a24c9cbd336e46aa519ab65fd03d8,
         type: 3}
       propertyPath: InitialModule.gravitySource
