@@ -5,83 +5,116 @@ using UnityEngine;
 public class Controlx : MonoBehaviour
 {
     public Animator anima; // Referência ao Animator do personagem.
+    float xmov; // Variável para guardar o movimento horizontal.
     public Rigidbody2D rdb; // Referência ao Rigidbody2D do personagem.
-    bool doublejump; // Flag para controle de pulo duplo.
+    bool jump, doublejump, jumpagain; // Flags para controle de pulo e pulo duplo.
+    float jumptime, jumptimeside; // Controla a duração dos pulos.
     public ParticleSystem fire; // Sistema de partículas para o efeito de fogo.
-
-    // Parâmetros de velocidade.
-    public float moveSpeed = 5.0f; // Velocidade de movimento horizontal.
-    public float jumpForce = 5.0f; // Força aplicada para o pulo.
-
-    private float groundCheckDistance = 0.1f; // Distância do raycast para verificar o chão.
+    public float speed = 20f; // Velocidade de corrida.
+    public float jumpForce = 10f; // Força do pulo.
 
     void Start()
     {
-        // Inicializações.
+        jumpagain = true;
     }
 
     void Update()
     {
-        // Captura o movimento horizontal do jogador.
-        float xmov = Input.GetAxis("Horizontal");
+        xmov = Input.GetAxis("Horizontal");
 
-        // Define a velocidade horizontal constante.
-        rdb.velocity = new Vector2(xmov * moveSpeed, rdb.velocity.y);
-
-        // Faz um raycast para baixo para detectar o chão.
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance);
-        bool isGrounded = hit.collider != null;
-
-        // Verifica se o botão de pulo foi pressionado.
         if (Input.GetButtonDown("Jump"))
         {
-            if (isGrounded) // Se está no chão.
-            {
-                Jump();
-            }
-            else if (doublejump) // Se está no ar e pode fazer um pulo duplo.
-            {
-                DoubleJump();
-            }
+            doublejump = true;
+        }
+        if (Input.GetButtonUp("Jump"))
+        {
+            jumpagain = true;
         }
 
-        // Reseta o pulo duplo quando o personagem está no chão.
-        if (isGrounded)
+        if (Input.GetButton("Jump") && jumpagain)
         {
-            doublejump = true; // Permite pulo duplo se estiver no chão.
-            anima.SetBool("isJumping", false); // Reseta a animação de pulo.
+            jump = true;
         }
         else
         {
-            anima.SetBool("isJumping", true); // Ativa a animação de pulo se não estiver no chão.
+            jump = false;
+            doublejump = false;
+            jumptime = 0;
+            jumptimeside = 0;
         }
 
-        // Desativa o estado de "Fire" no Animator.
         anima.SetBool("Fire", false);
 
-        // Efeito de fogo.
         if (Input.GetButtonDown("Fire1"))
         {
             fire.Emit(1);
             anima.SetBool("Fire", true);
         }
-
-        PhisicalReverser(); // Inverte o personagem.
-        anima.SetFloat("Velocity", Mathf.Abs(xmov)); // Define a velocidade no Animator.
     }
 
-    private void Jump()
+    void FixedUpdate()
     {
-        // Aplica força de pulo.
-        rdb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        doublejump = true; // Permite pulo duplo.
+        PhisicalReverser();
+        anima.SetFloat("Velocity", Mathf.Abs(xmov));
+
+        if (jumptimeside < 0.1f)
+            rdb.AddForce(new Vector2(xmov * speed / (rdb.velocity.magnitude + 1), 0));
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down);
+        if (hit)
+        {
+            anima.SetFloat("Height", hit.distance);
+            if (jumptimeside < 0.1)
+                JumpRoutine(hit);
+        }
+
+        RaycastHit2D hitright = Physics2D.Raycast(transform.position + Vector3.up * 0.5f, transform.right, 1);
+        if (hitright)
+        {
+            if (hitright.distance < 0.3f && hit.distance > 0.5f)
+            {
+                JumpRoutineSide(hitright);
+            }
+            Debug.DrawLine(hitright.point, transform.position + Vector3.up * 0.5f);
+        }
     }
 
-    private void DoubleJump()
+    private void JumpRoutine(RaycastHit2D hit)
     {
-        // Aplica força de pulo duplo.
-        rdb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-        doublejump = false; // Desabilita o pulo duplo após uso.
+        if (hit.distance < 0.1f)
+        {
+            jumptime = jumpForce; // Usar a força do pulo.
+        }
+
+        if (jump)
+        {
+            jumptime = Mathf.Lerp(jumptime, 0, Time.fixedDeltaTime * 10);
+            rdb.AddForce(Vector2.up * jumptime, ForceMode2D.Impulse);
+            if (rdb.velocity.y < 0)
+            {
+                jumpagain = false;
+            }
+        }
+    }
+
+    private void JumpRoutineSide(RaycastHit2D hitside)
+    {
+        if (hitside.distance < 0.3f)
+        {
+            jumptimeside = jumpForce; // Usar a força do pulo.
+        }
+
+        if (doublejump)
+        {
+            jumptimeside = Mathf.Lerp(jumptimeside, 0, Time.fixedDeltaTime * 10);
+            rdb.AddForce((hitside.normal + Vector2.up) * jumptimeside, ForceMode2D.Impulse);
+        }
+    }
+
+    void Reverser()
+    {
+        if (rdb.velocity.x > 0) transform.rotation = Quaternion.Euler(0, 0, 0);
+        if (rdb.velocity.x < 0) transform.rotation = Quaternion.Euler(0, 180, 0);
     }
 
     void PhisicalReverser()
@@ -90,9 +123,11 @@ public class Controlx : MonoBehaviour
         if (rdb.velocity.x < -0.1f) transform.rotation = Quaternion.Euler(0, 180, 0);
     }
 
-    // Detecção de colisão com objetos.
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Aqui você pode adicionar lógica para colisões, se necessário.
+        if (collision.collider.CompareTag("Damage") || collision.collider.CompareTag("Enemy"))
+        {
+            LevelManager.instance.LowDamage(); // Chama a função para aplicar dano.
+        }
     }
 }

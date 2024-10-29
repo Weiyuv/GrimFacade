@@ -763,8 +763,8 @@ MonoBehaviour:
   anima: {fileID: 875654765}
   rdb: {fileID: 875654766}
   fire: {fileID: 3855496}
-  moveSpeed: 1.5
-  jumpForce: 4.5
+  speed: 10
+  jumpForce: 0.9
 --- !u!1 &999568614
 GameObject:
   m_ObjectHideFlags: 0
