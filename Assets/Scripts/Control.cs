@@ -120,7 +120,7 @@ public class Control : MonoBehaviour
     {
         if (hitside.distance < 0.3f)
         {
-            jumptimeside = 6;
+            jumptimeside = 3;
         }
 
         if (doublejump)

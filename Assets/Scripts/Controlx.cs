@@ -2,27 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Controlx
-    : MonoBehaviour
+public class Controlx : MonoBehaviour
 {
-    public Animator anima; // ReferÃªncia ao Animator do personagem.
-    float xmov; // VariÃ¡vel para guardar o movimento horizontal.
-    public Rigidbody2D rdb; // ReferÃªncia ao Rigidbody2D do personagem.
+    public Animator anima; // Referência ao Animator do personagem.
+    float xmov; // Variável para guardar o movimento horizontal.
+    public Rigidbody2D rdb; // Referência ao Rigidbody2D do personagem.
     bool jump, doublejump, jumpagain; // Flags para controle de pulo e pulo duplo.
-    float jumptime, jumptimeside; // Controla a duraÃ§Ã£o dos pulos.
-    public ParticleSystem fire; // Sistema de partÃ­culas para o efeito de fogo.
-    public float speed = 20f; // Velocidade de corrida.
-    public float jumpForce = 10f; // ForÃ§a do pulo.
+    float jumptime, jumptimeside; // Controla a duração dos pulos.
+    public ParticleSystem fire; // Sistema de partículas para o efeito de fogo.
+
+    // Variáveis públicas para controlar as velocidades
+    [Header("Velocidades")]
+    public float moveSpeed = 20f; // Velocidade de movimento horizontal.
+    public float jumpForce = 10f; // Força do pulo.
+    public float doubleJumpForce = 8f; // Força do pulo duplo.
+    public float sideJumpForce = 5f; // Força do pulo lateral.
 
     void Start()
     {
+        // Método para inicializações. 
         jumpagain = true;
     }
 
     void Update()
     {
+        // Captura o movimento horizontal do jogador.
         xmov = Input.GetAxis("Horizontal");
 
+        // Verifica se o botão de pulo foi pressionado e controla o pulo duplo.
         if (Input.GetButtonDown("Jump"))
         {
             doublejump = true;
@@ -32,6 +39,7 @@ public class Controlx
             jumpagain = true;
         }
 
+        // Define o estado de pulo com base na entrada do usuário.
         if (Input.GetButton("Jump") && jumpagain)
         {
             jump = true;
@@ -44,8 +52,10 @@ public class Controlx
             jumptimeside = 0;
         }
 
+        // Desativa o estado de "Fire" no Animator.
         anima.SetBool("Fire", false);
 
+        // Ativa o efeito de fogo e define o estado "Fire" no Animator quando o botão de fogo é pressionado.
         if (Input.GetButtonDown("Fire1"))
         {
             fire.Emit(1);
@@ -55,36 +65,47 @@ public class Controlx
 
     void FixedUpdate()
     {
-        PhisicalReverser();
-        anima.SetFloat("Velocity", Mathf.Abs(xmov));
+        PhisicalReverser(); // Chama a função que inverte o personagem.
+        anima.SetFloat("Velocity", Mathf.Abs(xmov)); // Define a velocidade no Animator.
 
+        // Adiciona uma força para mover o personagem com base na velocidade configurada.
         if (jumptimeside < 0.1f)
-            rdb.AddForce(new Vector2(xmov * speed / (rdb.velocity.magnitude + 1), 0));
+        {
+            rdb.AddForce(new Vector2(xmov * moveSpeed / (rdb.velocity.magnitude + 1), 0));
+        }
 
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down);
+        RaycastHit2D hit;
+
+        // Faz um raycast para baixo para detectar o chão.
+        hit = Physics2D.Raycast(transform.position, Vector2.down);
         if (hit)
         {
             anima.SetFloat("Height", hit.distance);
             if (jumptimeside < 0.1)
-                JumpRoutine(hit);
+                JumpRoutine(hit); // Chama a rotina de pulo.
         }
 
-        RaycastHit2D hitright = Physics2D.Raycast(transform.position + Vector3.up * 0.5f, transform.right, 1);
+        RaycastHit2D hitright;
+
+        // Faz um raycast para a direita para detectar paredes.
+        hitright = Physics2D.Raycast(transform.position + Vector3.up * 0.5f, transform.right, 1);
         if (hitright)
         {
             if (hitright.distance < 0.3f && hit.distance > 0.5f)
             {
-                JumpRoutineSide(hitright);
+                JumpRoutineSide(hitright); // Chama a rotina de pulo lateral.
             }
             Debug.DrawLine(hitright.point, transform.position + Vector3.up * 0.5f);
         }
     }
 
+    // Rotina de pulo (parte física).
     private void JumpRoutine(RaycastHit2D hit)
     {
+        // Verifica a distância do chão e aplica uma força de pulo se necessário.
         if (hit.distance < 0.1f)
         {
-            jumptime = jumpForce; // Usar a forÃ§a do pulo.
+            jumptime = jumpForce; // Ajuste com a variável de velocidade do pulo.
         }
 
         if (jump)
@@ -98,11 +119,12 @@ public class Controlx
         }
     }
 
+    // Rotina de pulo lateral.
     private void JumpRoutineSide(RaycastHit2D hitside)
     {
         if (hitside.distance < 0.3f)
         {
-            jumptimeside = jumpForce; // Usar a forÃ§a do pulo.
+            jumptimeside = sideJumpForce; // Ajuste com a variável de velocidade do pulo lateral.
         }
 
         if (doublejump)
@@ -112,23 +134,26 @@ public class Controlx
         }
     }
 
+    // Função para inverter a direção do personagem (visual).
     void Reverser()
     {
         if (rdb.velocity.x > 0) transform.rotation = Quaternion.Euler(0, 0, 0);
         if (rdb.velocity.x < 0) transform.rotation = Quaternion.Euler(0, 180, 0);
     }
 
+    // Função para inverter a direção do personagem (física).
     void PhisicalReverser()
     {
         if (rdb.velocity.x > 0.1f) transform.rotation = Quaternion.Euler(0, 0, 0);
         if (rdb.velocity.x < -0.1f) transform.rotation = Quaternion.Euler(0, 180, 0);
     }
 
+    // Detecção de colisão com objetos marcados com a tag "Damage".
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Damage") || collision.collider.CompareTag("Enemy"))
         {
-            LevelManager.instance.LowDamage(); // Chama a funÃ§Ã£o para aplicar dano.
+            LevelManager.instance.LowDamage(); // Chama a função para aplicar dano.
         }
     }
 }
