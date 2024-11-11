@@ -135,7 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5486484492800927836, guid: e34622290edb7f84187c17acb4641022,
     type: 3}
-  player: {fileID: 0}
+  player: {fileID: 4664568246221834, guid: d42a24c9cbd336e46aa519ab65fd03d8, type: 3}
   firePoint: {fileID: 264931506981023953}
   moveSpeed: 0
   shootingRange: 5
@@ -150,7 +150,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6042789445489614491}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
