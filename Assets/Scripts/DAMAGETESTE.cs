@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DAMAGETESTE: MonoBehaviour
+public class DAMAGETESTE : MonoBehaviour
 {
     [Header("Configurações de Vida")]
     [SerializeField]
-    private float maxLives = 40f;  // A quantidade máxima de vidas
-    private float currentLives;     // Vidas atuais
+    private float maxLives = 40f;  // Quantidade total de vidas configurável no Unity
+    private float currentLives;     // Vidas atuais do objeto
 
     [Header("Efeitos de Partículas")]
     [SerializeField]
@@ -17,7 +17,7 @@ public class DAMAGETESTE: MonoBehaviour
 
     [Header("Configurações de Destruição")]
     [SerializeField]
-    private float destructionDelay = 0.8f;  // Delay antes da destruição do objeto
+    private float destructionDelay = 0.8f;  // Tempo de delay antes de destruir o objeto
 
     private SpriteRenderer spriteRenderer;
 
@@ -27,7 +27,7 @@ public class DAMAGETESTE: MonoBehaviour
         currentLives = maxLives;  // Inicializa as vidas atuais com o valor máximo configurado
         spriteRenderer = GetComponent<SpriteRenderer>(); // Obtém o SpriteRenderer (para desabilitar a visibilidade)
 
-        // Exibe o valor inicial de vidas no console
+        // Exibe o valor inicial de vidas no console para depuração
         Debug.Log("Vidas iniciais: " + currentLives);
     }
 
@@ -35,16 +35,16 @@ public class DAMAGETESTE: MonoBehaviour
     private void OnParticleCollision(GameObject other)
     {
         // Reduz as vidas ao ser atingido
-        TakeDamage(1f);  // Reduz 1 vida por colisão com partículas
+        TakeDamage(1f);  // Cada colisão reduz 1 vida
     }
 
     // Função que aplica dano e gerencia as vidas
     private void TakeDamage(float damageAmount)
     {
         currentLives -= damageAmount;  // Subtrai a quantidade de dano das vidas atuais
-        Debug.Log("Vidas restantes: " + currentLives);
+        Debug.Log("Vidas restantes: " + currentLives);  // Exibe no console a quantidade de vidas restantes
 
-        // Verifica se as vidas estão abaixo de metade e, se sim, cria a partícula de fumaça
+        // Se as vidas estão abaixo da metade, cria a partícula de fumaça
         if (currentLives < maxLives / 2f)
         {
             if (smoke != null)
@@ -53,7 +53,7 @@ public class DAMAGETESTE: MonoBehaviour
             }
         }
 
-        // Quando as vidas chegam a 0 ou menos, destrói o objeto
+        // Quando as vidas chegam a 0 ou menos, chama a função de destruição
         if (currentLives <= 0f)
         {
             HandleDeath();

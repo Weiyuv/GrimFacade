@@ -1,0 +1,191 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AA : MonoBehaviour
+{
+    public Animator anima; // Referência ao Animator do personagem.
+    float xmov; // Variável para guardar o movimento horizontal.
+    public Rigidbody2D rdb; // Referência ao Rigidbody2D do personagem.
+    bool jump, doublejump, jumpagain; // Flags para controle de pulo e pulo duplo.
+    float jumptime, jumptimeside; // Controla a duração dos pulos.
+    public ParticleSystem fire; // Sistema de partículas para o efeito de fogo.
+
+    // Variáveis públicas para controlar as velocidades
+    [Header("Velocidades")]
+    public float moveSpeed = 20f; // Velocidade de movimento horizontal.
+    public float jumpForce = 10f; // Força do pulo.
+    public float doubleJumpForce = 8f; // Força do pulo duplo.
+    public float sideJumpForce = 5f; // Força do pulo lateral.
+
+    // Variáveis para controlar o fogo
+    [Header("Fogo")]
+    public int maxFireUses = 3; // Número máximo de disparos que podem ser feitos sem recarregar.
+    private int currentFireUses; // Número atual de disparos restantes (cargas).
+    public float fireCooldown = 5f; // Tempo de cooldown para recarregar os disparos.
+    private float fireCooldownTimer; // Temporizador para o cooldown de recarga.
+
+    void Start()
+    {
+        // Inicializa o número de disparos restantes e o cooldown
+        currentFireUses = maxFireUses;
+        fireCooldownTimer = 0f; // Começa o cooldown em 0.
+    }
+
+    void Update()
+    {
+        // Captura o movimento horizontal do jogador.
+        xmov = Input.GetAxis("Horizontal");
+
+        // Verifica se o botão de pulo foi pressionado e controla o pulo duplo.
+        if (Input.GetButtonDown("Jump"))
+        {
+            doublejump = true;
+        }
+        if (Input.GetButtonUp("Jump"))
+        {
+            jumpagain = true;
+        }
+
+        // Define o estado de pulo com base na entrada do usuário.
+        if (Input.GetButton("Jump") && jumpagain)
+        {
+            jump = true;
+        }
+        else
+        {
+            jump = false;
+            doublejump = false;
+            jumptime = 0;
+            jumptimeside = 0;
+        }
+
+        // Atualiza o cooldown do fogo
+        if (fireCooldownTimer > 0)
+        {
+            fireCooldownTimer -= Time.deltaTime; // Diminui o tempo do cooldown
+        }
+
+        // Desativa o estado de "Fire" no Animator
+        anima.SetBool("Fire", false);
+
+        // Verifica se o jogador pode disparar
+        if (Input.GetButtonDown("Fire1") && currentFireUses > 0 && fireCooldownTimer <= 0)
+        {
+            // Emite o efeito de fogo
+            fire.Emit(1);
+
+            // Diminui o número de disparos restantes
+            currentFireUses--;
+
+            // Define o estado "Fire" no Animator
+            anima.SetBool("Fire", true);
+
+            // Se as cargas acabarem, inicia o cooldown
+            if (currentFireUses == 0)
+            {
+                fireCooldownTimer = fireCooldown; // Inicia o cooldown.
+            }
+        }
+
+        // Quando o cooldown terminar, recarrega as cargas
+        if (fireCooldownTimer <= 0 && currentFireUses == 0)
+        {
+            currentFireUses = maxFireUses; // Recarrega as cargas para o valor máximo
+        }
+    }
+
+    void FixedUpdate()
+    {
+        PhisicalReverser(); // Chama a função que inverte o personagem.
+        anima.SetFloat("Velocity", Mathf.Abs(xmov)); // Define a velocidade no Animator.
+
+        // Adiciona uma força para mover o personagem com base na velocidade configurada.
+        if (jumptimeside < 0.1f)
+        {
+            rdb.AddForce(new Vector2(xmov * moveSpeed / (rdb.velocity.magnitude + 1), 0));
+        }
+
+        RaycastHit2D hit;
+
+        // Faz um raycast para baixo para detectar o chão.
+        hit = Physics2D.Raycast(transform.position, Vector2.down);
+        if (hit)
+        {
+            anima.SetFloat("Height", hit.distance);
+            if (jumptimeside < 0.1)
+                JumpRoutine(hit); // Chama a rotina de pulo.
+        }
+
+        RaycastHit2D hitright;
+
+        // Faz um raycast para a direita para detectar paredes.
+        hitright = Physics2D.Raycast(transform.position + Vector3.up * 0.5f, transform.right, 1);
+        if (hitright)
+        {
+            if (hitright.distance < 0.3f && hit.distance > 0.5f)
+            {
+                JumpRoutineSide(hitright); // Chama a rotina de pulo lateral.
+            }
+            Debug.DrawLine(hitright.point, transform.position + Vector3.up * 0.5f);
+        }
+    }
+
+    // Rotina de pulo (parte física).
+    private void JumpRoutine(RaycastHit2D hit)
+    {
+        // Verifica a distância do chão e aplica uma força de pulo se necessário.
+        if (hit.distance < 0.1f)
+        {
+            jumptime = jumpForce; // Ajuste com a variável de velocidade do pulo.
+        }
+
+        if (jump)
+        {
+            jumptime = Mathf.Lerp(jumptime, 0, Time.fixedDeltaTime * 10);
+            rdb.AddForce(Vector2.up * jumptime, ForceMode2D.Impulse);
+            if (rdb.velocity.y < 0)
+            {
+                jumpagain = false;
+            }
+        }
+    }
+
+    // Rotina de pulo lateral.
+    private void JumpRoutineSide(RaycastHit2D hitside)
+    {
+        if (hitside.distance < 0.3f)
+        {
+            jumptimeside = sideJumpForce; // Ajuste com a variável de velocidade do pulo lateral.
+        }
+
+        if (doublejump)
+        {
+            jumptimeside = Mathf.Lerp(jumptimeside, 0, Time.fixedDeltaTime * 10);
+            rdb.AddForce((hitside.normal + Vector2.up) * jumptimeside, ForceMode2D.Impulse);
+        }
+    }
+
+    // Função para inverter a direção do personagem (visual).
+    void Reverser()
+    {
+        if (rdb.velocity.x > 0) transform.rotation = Quaternion.Euler(0, 0, 0);
+        if (rdb.velocity.x < 0) transform.rotation = Quaternion.Euler(0, 180, 0);
+    }
+
+    // Função para inverter a direção do personagem (física).
+    void PhisicalReverser()
+    {
+        if (rdb.velocity.x > 0.1f) transform.rotation = Quaternion.Euler(0, 0, 0);
+        if (rdb.velocity.x < -0.1f) transform.rotation = Quaternion.Euler(0, 180, 0);
+    }
+
+    // Detecção de colisão com objetos marcados com a tag "Damage".
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Damage") || collision.collider.CompareTag("Enemy"))
+        {
+            LevelManager.instance.LowDamage(); // Chama a função para aplicar dano.
+        }
+    }
+}

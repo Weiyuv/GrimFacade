@@ -288,7 +288,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.3
+      scalar: 0.1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -9962,10 +9962,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cba396e883111645a565e427bb3e481, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anima: {fileID: 0}
-  rdb: {fileID: 0}
-  fire: {fileID: 0}
-  moveSpeed: 20
-  jumpForce: 10
-  doubleJumpForce: 8
-  sideJumpForce: 5
+  anima: {fileID: 95530863979618488}
+  rdb: {fileID: 50029467371763818}
+  fire: {fileID: 198825090059282404}
+  moveSpeed: 9
+  jumpForce: 0.9
+  doubleJumpForce: 0.5
+  sideJumpForce: 0.5
