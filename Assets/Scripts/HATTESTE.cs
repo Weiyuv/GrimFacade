@@ -1,12 +1,11 @@
 using UnityEngine;
 
-public class HATETESTE : MonoBehaviour
+public class HATTESTE : MonoBehaviour
 {
     public Transform player; // O Transform do jogador
-    public float speed = 2f; // Velocidade do inimigo
+    public float speed = 2f; // Velocidade de movimento do inimigo
     public float stoppingDistance = 1f; // Distância para parar de se mover em direção ao jogador
-    public float minFollowDistance = 3f; // Distância mínima para começar a seguir o jogador
-    public float maxFollowDistance = 10f; // Distância máxima para seguir o jogador
+    public float followDistance = 5f; // Distância máxima de seguimento antes do inimigo parar de seguir
 
     void Update()
     {
@@ -15,19 +14,20 @@ public class HATETESTE : MonoBehaviour
             // Calcular a distância entre o inimigo e o jogador
             float distance = Vector2.Distance(transform.position, player.position);
 
-            // Se o jogador estiver fora do range de seguir (fora do intervalo de distância definido)
-            if (distance < minFollowDistance || distance > maxFollowDistance)
+            // Se o jogador estiver dentro do alcance de seguimento
+            if (distance > stoppingDistance && distance <= followDistance)
             {
-                // Se estiver fora do range, o inimigo não se move e fica parado
-                return;
-            }
+                // Calcular a direção para o jogador
+                Vector2 direction = (player.position - transform.position).normalized;
 
-            // Se o jogador estiver dentro do range (entre minFollowDistance e maxFollowDistance)
-            if (distance > stoppingDistance)
+                // Mover o inimigo em direção ao jogador
+                transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+            }
+            // Caso o inimigo esteja muito perto ou muito longe, ele para
+            else
             {
-                // Se o jogador estiver mais distante que a distância de parada, o inimigo se move em direção a ele
-                Vector2 direction = (player.position - transform.position).normalized; // Direção para o jogador
-                transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime); // Mover o inimigo
+                // O inimigo não se move
+                // Você pode adicionar aqui uma animação de "espera" ou outro comportamento, se necessário.
             }
         }
     }
