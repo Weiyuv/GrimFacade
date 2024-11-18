@@ -2,81 +2,88 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DAMAGETESTE : MonoBehaviour
+public class DAMAGETESTE: MonoBehaviour
 {
+    [Header("Configurações de Vida")]
     [SerializeField]
-    private float lives = 4f;  // Agora lives é um float, permitindo valores decimais.
+    private float maxLives = 40f;  // A quantidade máxima de vidas
+    private float currentLives;     // Vidas atuais
 
-    private float initialLives;
+    [Header("Efeitos de Partículas")]
     [SerializeField]
-    ParticleSystem smoke;
+    private ParticleSystem smoke;   // Partícula de fumaça para indicar dano
     [SerializeField]
-    ParticleSystem explosion;
+    private ParticleSystem explosion; // Partícula de explosão para quando morrer
 
-    // Start is called before the first frame update
+    [Header("Configurações de Destruição")]
+    [SerializeField]
+    private float destructionDelay = 0.8f;  // Delay antes da destruição do objeto
+
+    private SpriteRenderer spriteRenderer;
+
+    // Start é chamado antes do primeiro frame
     void Start()
     {
-        initialLives = lives;
+        currentLives = maxLives;  // Inicializa as vidas atuais com o valor máximo configurado
+        spriteRenderer = GetComponent<SpriteRenderer>(); // Obtém o SpriteRenderer (para desabilitar a visibilidade)
+
+        // Exibe o valor inicial de vidas no console
+        Debug.Log("Vidas iniciais: " + currentLives);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+    // Chamado quando o objeto é atingido por partículas (colisão com partículas)
     private void OnParticleCollision(GameObject other)
     {
-        StartCoroutine(Blink());
+        // Reduz as vidas ao ser atingido
+        TakeDamage(1f);  // Reduz 1 vida por colisão com partículas
+    }
 
-        lives--; // Diminui o valor de 'lives' a cada colisão de partícula.
+    // Função que aplica dano e gerencia as vidas
+    private void TakeDamage(float damageAmount)
+    {
+        currentLives -= damageAmount;  // Subtrai a quantidade de dano das vidas atuais
+        Debug.Log("Vidas restantes: " + currentLives);
 
-        if (lives < initialLives / 2f) // Verifica se as vidas caíram para menos da metade.
+        // Verifica se as vidas estão abaixo de metade e, se sim, cria a partícula de fumaça
+        if (currentLives < maxLives / 2f)
         {
-            CreateandPlay(smoke);
-        }
-
-        if (lives <= 0f) // Quando 'lives' chega a 0 ou menos, destrói o objeto.
-        {
-            CreateandPlay(explosion);
-
-            SpriteRenderer renderer = GetComponent<SpriteRenderer>();
-            if (!renderer)
+            if (smoke != null)
             {
-                renderer = GetComponentInChildren<SpriteRenderer>();
+                CreateAndPlayParticle(smoke);
             }
-            renderer.enabled = false;
-            Destroy(gameObject, 0.8f); // Espera 0.8 segundos antes de destruir o objeto.
+        }
+
+        // Quando as vidas chegam a 0 ou menos, destrói o objeto
+        if (currentLives <= 0f)
+        {
+            HandleDeath();
         }
     }
 
-    /// <summary>
-    /// Cria uma partícula e inicia sua animação.
-    /// </summary>
-    /// <param name="particle">Referência da partícula (prefab) a ser instanciada.</param>
-    void CreateandPlay(ParticleSystem particle)
+    // Função que lida com a morte do objeto (destruição e efeitos)
+    private void HandleDeath()
     {
-        if (particle)
+        if (explosion != null)
         {
-            GameObject ob = Instantiate(particle.gameObject, transform.position, Quaternion.identity);
-            ob.transform.parent = gameObject.transform;
-            ob.GetComponent<ParticleSystem>().Play();
+            CreateAndPlayParticle(explosion);  // Cria a partícula de explosão
         }
+
+        // Desabilita o sprite para indicar que o objeto "morreu"
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.enabled = false;
+        }
+
+        // Destroi o objeto após um pequeno delay
+        Destroy(gameObject, destructionDelay);
     }
 
-    IEnumerator Blink()
+    // Função para instanciar e tocar a partícula
+    private void CreateAndPlayParticle(ParticleSystem particle)
     {
-        SpriteRenderer renderer = GetComponent<SpriteRenderer>();
-        if (!renderer)
-        {
-            renderer = GetComponentInChildren<SpriteRenderer>();
-        }
-        for (int i = 0; i < 5; i++)
-        {
-            renderer.color = new Color(1, 0, 0); // Piscando com a cor vermelha.
-            yield return new WaitForSeconds(0.1f);
-            renderer.color = new Color(1, 1, 1); // De volta à cor original.
-            yield return new WaitForSeconds(0.1f);
-        }
+        // Instancia a partícula na posição do objeto
+        GameObject particleObj = Instantiate(particle.gameObject, transform.position, Quaternion.identity);
+        particleObj.transform.parent = transform;  // Torna a partícula filha do objeto para não se mover sozinha
+        particleObj.GetComponent<ParticleSystem>().Play();  // Toca a partícula
     }
 }
