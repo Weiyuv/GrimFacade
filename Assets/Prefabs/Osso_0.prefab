@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1238909517831690998}
   - component: {fileID: -6384677365097569401}
   - component: {fileID: 5765235313074326315}
+  - component: {fileID: 6293419408274318026}
   m_Layer: 2
   m_Name: Osso_0
   m_TagString: Damage
@@ -180,3 +181,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.46666667}
   m_EdgeRadius: 0
+--- !u!114 &6293419408274318026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5486484492800927836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 434e241db4a5ed64eabf1704bcc37cae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
