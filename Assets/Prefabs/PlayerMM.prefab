@@ -10008,6 +10008,6 @@ MonoBehaviour:
   rdb: {fileID: 50029467371763818}
   fire: {fileID: 198825090059282404}
   moveSpeed: 8
-  jumpForce: 4.3
+  jumpForce: 4.4
   maxFireUses: 10
   fireCooldown: 3

@@ -2,108 +2,103 @@ using UnityEngine;
 
 public class AzrakController : MonoBehaviour
 {
-    public float speed = 5f;  // Velocidade de voo
-    public float attackRange = 5f;  // Distância de ataque de longo alcance
-    public float attackNearRange = 2f; // Distância de ataque de curto alcance
-    public float chaseRange = 10f; // Distância para ativar a perseguição
-    public float attackCooldown = 1f;  // Intervalo entre ataques
-    public Transform player;  // Referência ao player
-    public Transform attackPointNear;  // Ponto de ataque de curto alcance
-    public Transform attackPointFar;  // Ponto de ataque de longo alcance
-    public GameObject projectilePrefab;  // Projeto de ataque de longo alcance
-    public Animator animator;  // Referência ao Animator
+    public enum BossState { Idle, Flying, MeleeAttack, RangeAttack }
+    public BossState currentState;
 
-    private float lastAttackTime = 0f;
+    public float flySpeed = 3f;
+    public float meleeRange = 2f;
+    public float rangeAttackCooldown = 3f;
+    private float nextRangeAttackTime = 0f;
 
-    private void Update()
+    private Transform player;
+    private Animator animator;
+
+    void Start()
     {
-        // Atualizar a posição do Azrak e detectar a distância para o player
-        MoveAzrak();
-        Attack();
+        // Referência ao jogador e ao Animator
+        player = GameObject.FindWithTag("Player").transform;
+        animator = GetComponent<Animator>();
+
+        // Inicializa o Boss no estado Idle
+        currentState = BossState.Idle;
     }
 
-    private void MoveAzrak()
+    void Update()
     {
-        // Calcular a distância até o player
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-
-        // Verificar se o player está dentro do alcance de perseguição
-        if (distanceToPlayer <= chaseRange)
+        // Comportamento do Boss
+        switch (currentState)
         {
-            // Mover o Azrak em direção ao player, fazendo ele "voar" de forma simples
-            Vector2 direction = (player.position - transform.position).normalized;
-            transform.position += (Vector3)direction * speed * Time.deltaTime;
+            case BossState.Idle:
+                IdleBehavior();
+                break;
 
-            // Atualizar animação de movimento (andar)
-            animator.SetFloat("Speed", direction.magnitude);  // Supondo que tenha uma animação de voo ou andar
+            case BossState.Flying:
+                FlyBehavior();
+                break;
 
-            // Rotacionar o Azrak para olhar para o jogador (invertido)
-            RotateAzrak(direction);
+            case BossState.MeleeAttack:
+                MeleeAttackBehavior();
+                break;
+
+            case BossState.RangeAttack:
+                RangeAttackBehavior();
+                break;
         }
-        else
+
+        // Trocar de estado dependendo da situação
+        UpdateState();
+    }
+
+    void IdleBehavior()
+    {
+        // Aqui o Boss fica parado
+        animator.SetBool("IsIdle", true);
+    }
+
+    void FlyBehavior()
+    {
+        // Movimenta o Boss para o jogador
+        Vector3 direction = (player.position - transform.position).normalized;
+        transform.Translate(direction * flySpeed * Time.deltaTime);
+
+        animator.SetBool("IsFlying", true);
+    }
+
+    void MeleeAttackBehavior()
+    {
+        // Realiza um ataque corpo a corpo (melee)
+        animator.SetTrigger("MeleeAttack");
+
+        // Quando o ataque for feito, o Boss volta ao estado Idle
+        currentState = BossState.Idle;
+    }
+
+    void RangeAttackBehavior()
+    {
+        // Lança um projétil ou realiza um ataque à distância
+        if (Time.time >= nextRangeAttackTime)
         {
-            // Parar o movimento caso o player esteja fora do alcance de perseguição
-            animator.SetFloat("Speed", 0);  // Parar animação
+            animator.SetTrigger("RangeAttack");
+            nextRangeAttackTime = Time.time + rangeAttackCooldown;
         }
     }
 
-    private void RotateAzrak(Vector2 direction)
+    void UpdateState()
     {
-        // Verificar se o jogador está à esquerda ou à direita do Azrak
-        if (direction.x > 0) // Jogador está à esquerda (inverter lógica)
+        // Aqui você pode decidir as condições para mudar de estado
+        if (currentState == BossState.Idle && Vector3.Distance(transform.position, player.position) < 5f)
         {
-            // Inverter a escala no eixo X (virar o sprite para a esquerda)
-            transform.localScale = new Vector3(-1, 1, 1);
+            currentState = BossState.Flying;  // Mudar para voo se o jogador estiver perto
         }
-        else if (direction.x < 0) // Jogador está à direita (inverter lógica)
+
+        if (currentState == BossState.Flying && Vector3.Distance(transform.position, player.position) < meleeRange)
         {
-            // Voltar à escala normal (virar o sprite para a direita)
-            transform.localScale = new Vector3(1, 1, 1);
+            currentState = BossState.MeleeAttack;  // Se o jogador estiver dentro do alcance do ataque corpo a corpo
         }
-    }
 
-    private void Attack()
-    {
-        if (Time.time - lastAttackTime < attackCooldown) return;  // Verifica o cooldown do ataque
-
-        // Checar a distância entre o Azrak e o player
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-
-        if (distanceToPlayer <= attackNearRange)
+        if (currentState == BossState.Flying && Vector3.Distance(transform.position, player.position) > meleeRange)
         {
-            // Ataque de curto alcance
-            animator.SetTrigger("AzrakAtacando");
-            // Execute o ataque de curto alcance (ex: dano direto ao player ou animação de ataque)
-            AttackNear();
+            currentState = BossState.RangeAttack;  // Se o jogador estiver fora do alcance do melee, ataca à distância
         }
-        else if (distanceToPlayer <= attackRange)
-        {
-            // Ataque de longo alcance
-            animator.SetTrigger("AzrakRange");
-            // Execute o ataque de longo alcance (ex: projétil)
-            AttackFar();
-        }
-    }
-
-    private void AttackNear()
-    {
-        // Lógica de ataque de curto alcance
-        // Aqui você pode dar dano direto ao player ou fazer alguma ação física
-        Debug.Log("Azrak atacando de perto!");
-
-        // Exemplo: Verificar colisão com o player (você pode usar um Collider2D para detectar isso)
-        // Implementar o dano direto ou animação de impacto
-        lastAttackTime = Time.time;  // Resetar o cooldown
-    }
-
-    private void AttackFar()
-    {
-        // Lógica de ataque de longo alcance (ex: disparar projétil)
-        Debug.Log("Azrak atacando à distância!");
-
-        // Instanciar um projétil
-        Instantiate(projectilePrefab, attackPointFar.position, Quaternion.identity);
-
-        lastAttackTime = Time.time;  // Resetar o cooldown
     }
 }
