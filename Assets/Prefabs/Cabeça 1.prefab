@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2945567027182825418}
   - component: {fileID: 6013689981962263669}
   - component: {fileID: 1363858942252609619}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: "Cabe\xE7a 1"
   m_TagString: Enemy
   m_Icon: {fileID: 0}

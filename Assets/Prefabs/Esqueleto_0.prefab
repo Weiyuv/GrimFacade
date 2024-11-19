@@ -61,7 +61,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6042789445489614491}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.8200002, y: -32.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -135,12 +135,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5486484492800927836, guid: e34622290edb7f84187c17acb4641022,
     type: 3}
-  player: {fileID: 4664568246221834, guid: d42a24c9cbd336e46aa519ab65fd03d8, type: 3}
+  player: {fileID: 0}
   firePoint: {fileID: 264931506981023953}
   moveSpeed: 0
-  shootingRange: 5
-  fireRate: 2
-  projectileSpeed: 5
+  shootingRange: 2
+  fireRate: 2.5
+  projectileSpeed: 1
   stoppingDistance: 0
 --- !u!50 &142112637705811190
 Rigidbody2D:
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebba1056da94fef47a0ffa3175f3eef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 4
+  lives: 5
   smoke: {fileID: 0}
   explosion: {fileID: 0}
 --- !u!61 &6162245079113510982

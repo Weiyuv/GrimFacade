@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7463733968152307353}
   - component: {fileID: 8620474088307355023}
   - component: {fileID: 6250998666135633541}
+  - component: {fileID: 6303221198183205952}
   m_Layer: 0
   m_Name: corte do azrak (1)_0
   m_TagString: Untagged
@@ -106,3 +107,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6303221198183205952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280676966764829773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9b37962bde5d554abf741cbbc1a7daf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  player: {fileID: 0}
+  maxDistance: 5

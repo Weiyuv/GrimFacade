@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: -6384677365097569401}
   - component: {fileID: 5765235313074326315}
   - component: {fileID: 6293419408274318026}
-  m_Layer: 2
+  m_Layer: 10
   m_Name: Osso_0
-  m_TagString: Damage
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -165,7 +165,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
