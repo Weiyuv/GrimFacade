@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 266c323053b157e498ae6d14d5475a56
+guid: 35eca894dbcf41a468e3820ac93f30e6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Guarda com cacetete parado-Sheet_0
+      name: Guarda com arma parado2-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 100
-        height: 100
+        x: 41
+        y: 34
+        width: 22
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a81c662adf3596241bc14f113a1a3c94
-      internalID: -922483079
+      spriteID: 469596d6a8cd185478ec1c555b33f72d
+      internalID: -1600931656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guarda com cacetete parado-Sheet_1
+      name: Guarda com arma parado2-Sheet_1
       rect:
         serializedVersion: 2
-        x: 100
-        y: 0
-        width: 100
-        height: 100
+        x: 141
+        y: 34
+        width: 22
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4984cd1cb418444ebef81da7da590f5
-      internalID: 646152446
+      spriteID: 1a30c61122a4a5648b2bd03909060aec
+      internalID: -665876689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guarda com cacetete parado-Sheet_2
+      name: Guarda com arma parado2-Sheet_2
       rect:
         serializedVersion: 2
-        x: 200
-        y: 0
-        width: 100
-        height: 100
+        x: 241
+        y: 34
+        width: 22
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5d1643407fa84b4786f4a7b363f39e2
-      internalID: 1205262953
+      spriteID: 45ec4c93ff0ba7741bbbb87a5d3560d5
+      internalID: -2147413725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guarda com cacetete parado-Sheet_3
+      name: Guarda com arma parado2-Sheet_3
       rect:
         serializedVersion: 2
-        x: 300
-        y: 0
-        width: 100
-        height: 100
+        x: 341
+        y: 34
+        width: 22
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a99f0e66dc1a0a4fa46fe37328ca117
-      internalID: -120945112
+      spriteID: a73c0fab1a5bfea41adf60aa32a18236
+      internalID: 518128765
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Guarda com cacetete parado-Sheet_0: -922483079
-      Guarda com cacetete parado-Sheet_1: 646152446
-      Guarda com cacetete parado-Sheet_2: 1205262953
-      Guarda com cacetete parado-Sheet_3: -120945112
+      Guarda com arma parado2-Sheet_0: -1600931656
+      Guarda com arma parado2-Sheet_1: -665876689
+      Guarda com arma parado2-Sheet_2: -2147413725
+      Guarda com arma parado2-Sheet_3: 518128765
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 266c323053b157e498ae6d14d5475a56
+guid: 4c3e528dbb1f99c479f93597614d6fa6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Guarda com cacetete parado-Sheet_0
+      name: Guarda com arma atirando2-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a81c662adf3596241bc14f113a1a3c94
-      internalID: -922483079
+      spriteID: df4d4f8576c47fc4e850394987417273
+      internalID: 1226617328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guarda com cacetete parado-Sheet_1
+      name: Guarda com arma atirando2-Sheet_1
       rect:
         serializedVersion: 2
         x: 100
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4984cd1cb418444ebef81da7da590f5
-      internalID: 646152446
+      spriteID: 14efe4dc0b102bd448df0fae8e681a45
+      internalID: 420650961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guarda com cacetete parado-Sheet_2
+      name: Guarda com arma atirando2-Sheet_2
       rect:
         serializedVersion: 2
         x: 200
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5d1643407fa84b4786f4a7b363f39e2
-      internalID: 1205262953
+      spriteID: 18f0cb09fcc88e345b18c0725e6d2f69
+      internalID: -558814010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guarda com cacetete parado-Sheet_3
+      name: Guarda com arma atirando2-Sheet_3
       rect:
         serializedVersion: 2
         x: 300
@@ -187,8 +187,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a99f0e66dc1a0a4fa46fe37328ca117
-      internalID: -120945112
+      spriteID: 424175315972a354f9351568acadf311
+      internalID: 741506272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guarda com arma atirando2-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0df1123107bf34fbf13717d5af074e
+      internalID: -1469883486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guarda com arma atirando2-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e51a1b8e8f93d64c898024c5b08b784
+      internalID: -691595639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guarda com arma atirando2-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98702fe130bfba41bd276819e000479
+      internalID: 1467920855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guarda com arma atirando2-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c4fde928de055458985f2aa90ad1f8
+      internalID: 1466494672
       vertices: []
       indices: 
       edges: []
@@ -204,10 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Guarda com cacetete parado-Sheet_0: -922483079
-      Guarda com cacetete parado-Sheet_1: 646152446
-      Guarda com cacetete parado-Sheet_2: 1205262953
-      Guarda com cacetete parado-Sheet_3: -120945112
+      Guarda com arma atirando2-Sheet_0: 1226617328
+      Guarda com arma atirando2-Sheet_1: 420650961
+      Guarda com arma atirando2-Sheet_2: -558814010
+      Guarda com arma atirando2-Sheet_3: 741506272
+      Guarda com arma atirando2-Sheet_4: -1469883486
+      Guarda com arma atirando2-Sheet_5: -691595639
+      Guarda com arma atirando2-Sheet_6: 1467920855
+      Guarda com arma atirando2-Sheet_7: 1466494672
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
