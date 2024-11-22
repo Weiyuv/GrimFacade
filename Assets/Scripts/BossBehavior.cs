@@ -83,29 +83,26 @@ public class BossBehavior : MonoBehaviour
 
     void AdjustPosition(float distanceToPlayer)
     {
-        Vector2 direction;
+        Vector2 direction = Vector2.zero;
 
         if (isNextAttackMelee && distanceToPlayer > meleeRange)
         {
             // Aproximar-se do jogador para ataque melee
             direction = (player.position - transform.position).normalized;
         }
-        else if (!isNextAttackMelee && (distanceToPlayer < rangeMinDistance || distanceToPlayer > rangeMaxDistance))
+        else if (!isNextAttackMelee && distanceToPlayer < rangeMinDistance)
         {
-            // Ajustar para manter distância de ataque à distância
-            if (distanceToPlayer < rangeMinDistance)
-            {
-                // Afastar-se do jogador para manter a distância mínima
-                direction = (transform.position - player.position).normalized;
-            }
-            else
-            {
-                // Aproximar-se do jogador para zona de alcance de ataque à distância
-                direction = (player.position - transform.position).normalized;
-            }
+            // Afastar-se do jogador para manter a distância mínima
+            direction = (transform.position - player.position).normalized;
+        }
+        else if (!isNextAttackMelee && distanceToPlayer > rangeMaxDistance)
+        {
+            // Aproximar-se do jogador para manter a distância máxima
+            direction = (player.position - transform.position).normalized;
         }
         else
         {
+            // Boss está na posição ideal para atacar
             animator.SetBool("isIdle", true);
             return; // Não movimenta se estiver na posição ideal para atacar
         }

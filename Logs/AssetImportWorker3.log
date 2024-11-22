@@ -182,3 +182,8 @@ Received Import Request.
 Start importing Assets/wheel.png using Guid(90aab2e8a7100c1498de8febb7d59dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31536a65d6f66060692cc23d6103d6d') in 0.143889 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: A operação de E/S foi anulada devido a uma saída de thread ou a uma requisição de aplicativo.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

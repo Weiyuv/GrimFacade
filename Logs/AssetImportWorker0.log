@@ -182,3 +182,8 @@ Received Import Request.
 Start importing Assets/tiles.prefab using Guid(9fb517835497b1e46ad3a13a181b72e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57d93d83837a9da9d0b8ddadf6f1d499') in 0.227761 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 40
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: A operação de E/S foi anulada devido a uma saída de thread ou a uma requisição de aplicativo.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
