@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3125768299461775206}
   - component: {fileID: 2399435640478327015}
   - component: {fileID: 4106969003007322442}
+  - component: {fileID: -8800078040253162769}
   m_Layer: 10
   m_Name: corte do azrak (1)_0
   m_TagString: Enemy
@@ -119,6 +120,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9b37962bde5d554abf741cbbc1a7daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  player: {fileID: 4664568246221834, guid: d42a24c9cbd336e46aa519ab65fd03d8, type: 3}
-  maxDistance: 5
+  speed: 2
+  lifetime: 5
+--- !u!50 &-8800078040253162769
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6604747355658436352}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
