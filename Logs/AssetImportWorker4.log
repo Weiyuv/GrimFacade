@@ -706,3 +706,495 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 607.937936 seconds.
+  path: Assets/Sprites/Guarda com cacetete parado-Sheet.png
+  artifactKey: Guid(266c323053b157e498ae6d14d5475a56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Guarda com cacetete parado-Sheet.png using Guid(266c323053b157e498ae6d14d5475a56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a91a1e50d43d80d8c8df23eba0cbf3e') in 0.067805 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.670402 seconds.
+  path: Assets/PlatformerSet1/02 background.png
+  artifactKey: Guid(0ff110103311344449b3b91008a97905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/02 background.png using Guid(0ff110103311344449b3b91008a97905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9518b5574fd06c2401edad904b132b26') in 0.024936 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000947 seconds.
+  path: Assets/PlatformerSet1/04 background.png
+  artifactKey: Guid(048637bba7f02c8499a2dfc07ecc075f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/04 background.png using Guid(048637bba7f02c8499a2dfc07ecc075f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd522296d0f35164bd8829c905183fee9') in 0.027004 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background.png
+  artifactKey: Guid(2993c40891c13c64e8035888be667aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background.png using Guid(2993c40891c13c64e8035888be667aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaa7a85977339753e2fce011842126ba') in 0.038642 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_7.asset
+  artifactKey: Guid(ec2026adbaaa916409eaaed11a1a3b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_7.asset using Guid(ec2026adbaaa916409eaaed11a1a3b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eb90cffaa3e0dc914d20d17bf34d31e') in 0.034683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_20.asset
+  artifactKey: Guid(f266995a43c7db64f9a9bf12f7143878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_20.asset using Guid(f266995a43c7db64f9a9bf12f7143878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d51a1ba436a4d4213b4bf18bb05d099') in 0.009094 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_5.asset
+  artifactKey: Guid(a7a7e3be524cec34eb25ceed558a71c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_5.asset using Guid(a7a7e3be524cec34eb25ceed558a71c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68d04cb45d3aecea6c8851fd3b062cd6') in 0.010182 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_14.asset
+  artifactKey: Guid(1866a461b63bed143b8f56396c12cfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_14.asset using Guid(1866a461b63bed143b8f56396c12cfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7061d9d90bf23e4cfe50c794d6df3f49') in 0.009379 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_15.asset
+  artifactKey: Guid(832da2153181a6d41ad91baf8199bc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_15.asset using Guid(832da2153181a6d41ad91baf8199bc5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fdd5af70665dfab56f494e64b31cb5b') in 0.010545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_16.asset
+  artifactKey: Guid(c614ac638f15edd4a92405821c9e6996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_16.asset using Guid(c614ac638f15edd4a92405821c9e6996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e49fa5e01e807c6ec30cd89ef372859') in 0.008635 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_3.asset
+  artifactKey: Guid(73625ffd3a8a8be4cb4b6c80aef2d121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_3.asset using Guid(73625ffd3a8a8be4cb4b6c80aef2d121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39683f8eb06d268a9ebdef3f071dc176') in 0.008087 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_11.asset
+  artifactKey: Guid(ef748bf7ae07bcf40b3c01eca6f29c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_11.asset using Guid(ef748bf7ae07bcf40b3c01eca6f29c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1d442af7a7a229e0fa06083c8b8085e') in 0.010030 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_18.asset
+  artifactKey: Guid(0516a4b0b62a4504a99f5c605a3c49d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_18.asset using Guid(0516a4b0b62a4504a99f5c605a3c49d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0631ee4073b06debe62b5957b5b71fb8') in 0.008099 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/PSD/Background.psd
+  artifactKey: Guid(f735618bc8f1eee499868d4c8b4b8837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/PSD/Background.psd using Guid(f735618bc8f1eee499868d4c8b4b8837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f8f6dcdafe9bbb9302d991001ae4d3d') in 0.029712 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/PlatformerSet1/05 background.png
+  artifactKey: Guid(7856ff2c37949ad4d9e77bec3b91e755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/05 background.png using Guid(7856ff2c37949ad4d9e77bec3b91e755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '343a076c887fec7c3b07b33c3675d883') in 0.024856 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_10.asset
+  artifactKey: Guid(e740f3d87bb2f664aad64f27d6cb391c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_10.asset using Guid(e740f3d87bb2f664aad64f27d6cb391c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed1ece9f6abb637099677eb26cf493f') in 0.009928 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_6.asset
+  artifactKey: Guid(50ccf53802fc3dc488b823e831c4eeac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_6.asset using Guid(50ccf53802fc3dc488b823e831c4eeac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a90a8bcd0c0288c2ca0ec996629fbdbe') in 0.008894 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_0.asset
+  artifactKey: Guid(f0f6f4d86ad4139479443606c3281097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_0.asset using Guid(f0f6f4d86ad4139479443606c3281097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '192be60281c9df06fd5c6bc906e3e733') in 0.009564 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/PlatformerSet1/03 background B.png
+  artifactKey: Guid(671c2728bfbe13e4a908a31d4b0a22fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/03 background B.png using Guid(671c2728bfbe13e4a908a31d4b0a22fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '864ec5e59efc5b62f394daffea2bbb83') in 0.030397 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_4.asset
+  artifactKey: Guid(a7961a72cc139634c8e3b35cc4633d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_4.asset using Guid(a7961a72cc139634c8e3b35cc4633d58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4560290fbfd6d1344cadb4f598487581') in 0.007920 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_8.asset
+  artifactKey: Guid(2b0f12fe3a6ad5b41a12ea95e1be3b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Dark Florest/Free Pixel Art Forest/Preview/Background 1_8.asset using Guid(2b0f12fe3a6ad5b41a12ea95e1be3b50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '852f850b4501bf83dd2b9b1e584eaeae') in 0.009060 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 14.463519 seconds.
+  path: Assets/PlatformerSet1/01 background.png
+  artifactKey: Guid(543fff9c6bee69649a543666c301ca86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PlatformerSet1/01 background.png using Guid(543fff9c6bee69649a543666c301ca86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '693ff1f63ef8747d3348d239d212f5af') in 0.024864 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.265758 seconds.
+  path: Assets/Sprites/Materials/Faca.mat
+  artifactKey: Guid(4043cf54657ec52419d1a8746f5ad07d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Materials/Faca.mat using Guid(4043cf54657ec52419d1a8746f5ad07d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16672c5459346f6dbbcb5b586c9e99bb') in 0.181625 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 13.080040 seconds.
+  path: Assets/Sprites/Guarda com cacetete parado-Sheet.png
+  artifactKey: Guid(266c323053b157e498ae6d14d5475a56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Guarda com cacetete parado-Sheet.png using Guid(266c323053b157e498ae6d14d5475a56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2ac0c9b51cdc4a041ab505594238124') in 0.020209 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.353 seconds
+Refreshing native plugins compatible for Editor in 0.91 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.581 seconds
+Domain Reload Profiling: 930ms
+	BeginReloadAssembly (146ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (121ms)
+		LoadAssemblies (203ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (6ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (581ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (266ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (47ms)
+			ProcessInitializeOnLoadAttributes (162ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 1.01 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1132 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10 unused Assets / (24.4 KB). Loaded Objects now: 1783.
+Memory consumption went from 95.3 MB to 95.3 MB.
+Total: 2.358300 ms (FindLiveObjects: 0.121300 ms CreateObjectMapping: 0.043100 ms MarkObjects: 2.163200 ms  DeleteObjects: 0.029900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 987.990420 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c20269413c38eae3ed65ab9e95b49e41') in 0.080224 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 21.913597 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1e1696fe70662d5ddc12a2cd99e2dfd') in 0.026552 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 6.601471 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c5b53345a79201702a71c316c46ab40') in 0.024839 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.602128 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c03624b794d1e847971724b585b8e6d') in 0.023352 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 76.726852 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '982fbbb8226a9263da1953ebdf4414f5') in 0.025025 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 3.500545 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8602d666de61809d4d30d6c24ecabed') in 0.022390 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 6.789621 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4784b2e960a3331264fbdba97699db3d') in 0.021313 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 33.284181 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deb710fcbfb8c387cdb152b881974336') in 0.020506 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.779567 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47338996140f59f0893cd5d48a9b7168') in 0.021654 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 4.409539 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a74edfe264d0694af085d3b66c69d33') in 0.021242 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 8.587765 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f6fbd6cb0fdff2dc53211159024101c') in 0.027384 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 48.015883 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a888d0d4f867c8c3e524bcf7ef8a4ee5') in 0.022911 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 61.654133 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b24c6e450dfe786bb66d5106b403600') in 0.025785 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 6.643024 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7801d590657f969dc5893dfdb9374e7') in 0.045148 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 16.564915 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40c53e64020f60710acaa6b6d347a23d') in 0.028450 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 4.475445 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e6346b111e7bab384fd94736cc06bda') in 0.028177 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 8.017491 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '053dfdfeb407357757de6bfbe522fd09') in 0.028562 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.087871 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b78c5e687bf923c7398ca0718ca6e504') in 0.025549 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.358929 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81bfaa4d320879b5e5dd94d95ee27915') in 0.029118 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 269.233789 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c236fa5f3c44018201bce9d2775882eb') in 0.025064 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 25.929482 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8db5c51f0daeaab3f8b1cd26915ad63b') in 0.028471 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.618603 seconds.
+  path: Assets/Sprites/Fase 1 NOVO.png
+  artifactKey: Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Fase 1 NOVO.png using Guid(429f4301d6a0df142bd854897fe950fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9334974be23253197475b16000473dc0') in 0.030125 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.399 seconds
+Refreshing native plugins compatible for Editor in 1.07 ms, found 0 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.851 seconds
+Domain Reload Profiling: 1247ms
+	BeginReloadAssembly (159ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (159ms)
+		LoadAssemblies (246ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (8ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (852ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (316ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (62ms)
+			ProcessInitializeOnLoadAttributes (190ms)
+			ProcessInitializeOnLoadMethodAttributes (38ms)
+			AfterProcessingInitializeOnLoad (14ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 1.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1132 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10 unused Assets / (24.4 KB). Loaded Objects now: 1790.
+Memory consumption went from 97.3 MB to 97.3 MB.
+Total: 2.902000 ms (FindLiveObjects: 0.213500 ms CreateObjectMapping: 0.142300 ms MarkObjects: 2.515600 ms  DeleteObjects: 0.029800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
