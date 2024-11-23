@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 55db68e93c5e3cb43b41447625068cef
+guid: 266c323053b157e498ae6d14d5475a56
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 120
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Guar com cacetete atacando-Sheet_0
+      name: Guarda com cacetete parado-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd6a467ba55ed304cb90fd6126047094
-      internalID: -1034497321
+      spriteID: a81c662adf3596241bc14f113a1a3c94
+      internalID: -922483079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guar com cacetete atacando-Sheet_1
+      name: Guarda com cacetete parado-Sheet_1
       rect:
         serializedVersion: 2
         x: 100
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a80c5b138aa67244b28af048293a28c
-      internalID: 528522161
+      spriteID: f4984cd1cb418444ebef81da7da590f5
+      internalID: 646152446
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guar com cacetete atacando-Sheet_2
+      name: Guarda com cacetete parado-Sheet_2
       rect:
         serializedVersion: 2
         x: 200
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1da08cb44c11794cb3616e4b5e2edc5
-      internalID: 689772159
+      spriteID: d5d1643407fa84b4786f4a7b363f39e2
+      internalID: 1205262953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Guar com cacetete atacando-Sheet_3
+      name: Guarda com cacetete parado-Sheet_3
       rect:
         serializedVersion: 2
         x: 300
@@ -187,92 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dc0b8ee2c0ae5f43a79e39541f65ed4
-      internalID: -2033454751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Guar com cacetete atacando-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 0
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16b08ec17d1d22c49bde2f765ac3fdb7
-      internalID: -2040024214
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Guar com cacetete atacando-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 500
-        y: 0
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98a6bc05302f27b4a8083bb599024a04
-      internalID: -1685129859
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Guar com cacetete atacando-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 600
-        y: 0
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aeb776b780ff508488b8c2f7bd304f00
-      internalID: -952760135
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Guar com cacetete atacando-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 700
-        y: 0
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: faa6386465287c345a5b94ea89733df6
-      internalID: 32302620
+      spriteID: 6a99f0e66dc1a0a4fa46fe37328ca117
+      internalID: -120945112
       vertices: []
       indices: 
       edges: []
@@ -288,14 +204,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Guar com cacetete atacando-Sheet_0: -1034497321
-      Guar com cacetete atacando-Sheet_1: 528522161
-      Guar com cacetete atacando-Sheet_2: 689772159
-      Guar com cacetete atacando-Sheet_3: -2033454751
-      Guar com cacetete atacando-Sheet_4: -2040024214
-      Guar com cacetete atacando-Sheet_5: -1685129859
-      Guar com cacetete atacando-Sheet_6: -952760135
-      Guar com cacetete atacando-Sheet_7: 32302620
+      Guarda com cacetete parado-Sheet_0: -922483079
+      Guarda com cacetete parado-Sheet_1: 646152446
+      Guarda com cacetete parado-Sheet_2: 1205262953
+      Guarda com cacetete parado-Sheet_3: -120945112
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

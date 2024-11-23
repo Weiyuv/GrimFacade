@@ -2,31 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class A: MonoBehaviour
+public class A : MonoBehaviour
 {
-    public Animator anima; // Referência ao Animator do personagem.
-    float xmov; // Variável para guardar o movimento horizontal.
-    public Rigidbody2D rdb; // Referência ao Rigidbody2D do personagem.
+    public Animator anima; // ReferÃªncia ao Animator do personagem.
+    float xmov; // VariÃ¡vel para guardar o movimento horizontal.
+    public Rigidbody2D rdb; // ReferÃªncia ao Rigidbody2D do personagem.
     bool jump; // Flag para controle de pulo.
-    public ParticleSystem fire; // Sistema de partículas para o efeito de fogo.
+    public ParticleSystem fire; // Sistema de partÃ­culas para o efeito de fogo.
 
-    // Variáveis públicas para controlar as velocidades
+    // VariÃ¡veis pÃºblicas para controlar as velocidades
     [Header("Velocidades")]
     public float moveSpeed = 20f; // Velocidade de movimento horizontal.
-    public float jumpForce = 10f; // Força do pulo.
+    public float jumpForce = 10f; // ForÃ§a do pulo.
 
-    // Variáveis para controlar o fogo
+    // VariÃ¡veis para controlar o fogo
     [Header("Fogo")]
-    public int maxFireUses = 3; // Número máximo de disparos que podem ser feitos sem recarregar.
-    private int currentFireUses; // Número atual de disparos restantes (cargas).
+    public int maxFireUses = 3; // NÃºmero mÃ¡ximo de disparos que podem ser feitos sem recarregar.
+    private int currentFireUses; // NÃºmero atual de disparos restantes (cargas).
     public float fireCooldown = 5f; // Tempo de cooldown para recarregar os disparos.
     private float fireCooldownTimer; // Temporizador para o cooldown de recarga.
 
     void Start()
     {
-        // Inicializa o número de disparos restantes e o cooldown
+        // Inicializa o nÃºmero de disparos restantes e o cooldown
         currentFireUses = maxFireUses;
-        fireCooldownTimer = 0f; // Começa o cooldown em 0.
+        fireCooldownTimer = 0f; // ComeÃ§a o cooldown em 0.
     }
 
     void Update()
@@ -34,7 +34,7 @@ public class A: MonoBehaviour
         // Captura o movimento horizontal do jogador.
         xmov = Input.GetAxis("Horizontal");
 
-        // Verifica se o botão de pulo foi pressionado.
+        // Verifica se o botÃ£o de pulo foi pressionado.
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
@@ -55,7 +55,7 @@ public class A: MonoBehaviour
             // Emite o efeito de fogo
             fire.Emit(1);
 
-            // Diminui o número de disparos restantes
+            // Diminui o nÃºmero de disparos restantes
             currentFireUses--;
 
             // Define o estado "Fire" no Animator
@@ -71,21 +71,21 @@ public class A: MonoBehaviour
         // Quando o cooldown terminar, recarrega as cargas
         if (fireCooldownTimer <= 0 && currentFireUses == 0)
         {
-            currentFireUses = maxFireUses; // Recarrega as cargas para o valor máximo
+            currentFireUses = maxFireUses; // Recarrega as cargas para o valor mÃ¡ximo
         }
     }
 
     void FixedUpdate()
     {
-        PhisicalReverser(); // Chama a função que inverte o personagem.
+        PhisicalReverser(); // Chama a funÃ§Ã£o que inverte o personagem.
         anima.SetFloat("Velocity", Mathf.Abs(xmov)); // Define a velocidade no Animator.
 
-        // Adiciona uma força para mover o personagem com base na velocidade configurada.
+        // Adiciona uma forÃ§a para mover o personagem com base na velocidade configurada.
         rdb.AddForce(new Vector2(xmov * moveSpeed / (rdb.velocity.magnitude + 1), 0));
 
         RaycastHit2D hit;
 
-        // Faz um raycast para baixo para detectar o chão.
+        // Faz um raycast para baixo para detectar o chÃ£o.
         hit = Physics2D.Raycast(transform.position, Vector2.down);
         if (hit)
         {
@@ -94,31 +94,38 @@ public class A: MonoBehaviour
         }
     }
 
-    // Rotina de pulo (parte física).
+    // Rotina de pulo (parte fÃ­sica).
     private void JumpRoutine(RaycastHit2D hit)
     {
-        // Verifica se o personagem está no chão e pode pular.
+        // Verifica se o personagem estÃ¡ no chÃ£o e pode pular.
         if (hit.distance < 0.1f && jump)
         {
-            rdb.velocity = new Vector2(rdb.velocity.x, 0); // Zera a velocidade vertical para evitar aceleração indesejada no pulo
-            rdb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse); // Aplica a força de pulo
-            jump = false; // Desativa o pulo após ser executado
+            rdb.velocity = new Vector2(rdb.velocity.x, 0); // Zera a velocidade vertical para evitar aceleraÃ§Ã£o indesejada no pulo
+            rdb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse); // Aplica a forÃ§a de pulo
+            jump = false; // Desativa o pulo apÃ³s ser executado
         }
     }
 
-    // Função para inverter a direção do personagem (física).
+    // FunÃ§Ã£o para inverter a direÃ§Ã£o do personagem (fÃ­sica).
     void PhisicalReverser()
     {
         if (rdb.velocity.x > 0.1f) transform.rotation = Quaternion.Euler(0, 0, 0);
         if (rdb.velocity.x < -0.1f) transform.rotation = Quaternion.Euler(0, 180, 0);
     }
 
-    // Detecção de colisão com objetos marcados com a tag "Damage".
+    // DetecÃ§Ã£o de colisÃ£o com objetos marcados com a tag "Damage".
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Damage") || collision.collider.CompareTag("Enemy"))
         {
-            LevelManager.instance.LowDamage(); // Chama a função para aplicar dano.
+            ApplyLowDamage(); // Aplica o dano diretamente.
         }
+    }
+
+    // FunÃ§Ã£o para aplicar dano ao jogador
+    private void ApplyLowDamage()
+    {
+        // Aqui vocÃª pode adicionar algum comportamento quando o personagem tomar dano.
+        Debug.Log("O jogador recebeu dano!");
     }
 }

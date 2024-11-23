@@ -42,7 +42,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564723697188490}
   serializedVersion: 8
-  lengthInSec: 5
+  lengthInSec: 2
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 3
@@ -117,7 +117,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -9760,12 +9760,11 @@ GameObject:
   - component: {fileID: 212571893892282256}
   - component: {fileID: 50029467371763818}
   - component: {fileID: 95530863979618488}
-  - component: {fileID: 114818115634691074}
   - component: {fileID: 5986345951746471547}
   - component: {fileID: 442732220619965257}
-  - component: {fileID: -4810678826651321268}
-  - component: {fileID: 5937763206554309833}
   - component: {fileID: 6327517365700913138}
+  - component: {fileID: 6826428202784609696}
+  - component: {fileID: 4511284480450652442}
   m_Layer: 2
   m_Name: PlayerMM
   m_TagString: Player
@@ -9889,21 +9888,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &114818115634691074
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989187543047504}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61782caa48f696d458c95daa6e99c7e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anima: {fileID: 95530863979618488}
-  rdb: {fileID: 50029467371763818}
-  fire: {fileID: 198825090059282404}
 --- !u!114 &5986345951746471547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9952,46 +9936,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.014360031, y: 0.178174}
   m_Size: {x: 0.16554594, y: 0.3665867}
   m_Direction: 0
---- !u!114 &-4810678826651321268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989187543047504}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cba396e883111645a565e427bb3e481, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anima: {fileID: 95530863979618488}
-  rdb: {fileID: 50029467371763818}
-  fire: {fileID: 198825090059282404}
-  moveSpeed: 9
-  jumpForce: 0.8
-  doubleJumpForce: 0.5
-  sideJumpForce: 0.3
---- !u!114 &5937763206554309833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989187543047504}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 840cf7ad844aff64abd6fe29d101d53a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anima: {fileID: 95530863979618488}
-  rdb: {fileID: 50029467371763818}
-  fire: {fileID: 198825090059282404}
-  moveSpeed: 9
-  jumpForce: 0.9
-  doubleJumpForce: 0.5
-  sideJumpForce: 0.5
-  maxFireUses: 10
-  fireCooldown: 2
 --- !u!114 &6327517365700913138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10007,7 +9951,39 @@ MonoBehaviour:
   anima: {fileID: 95530863979618488}
   rdb: {fileID: 50029467371763818}
   fire: {fileID: 198825090059282404}
-  moveSpeed: 8
-  jumpForce: 4.4
+  moveSpeed: 9
+  jumpForce: 4.7
   maxFireUses: 10
   fireCooldown: 3
+--- !u!114 &6826428202784609696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989187543047504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b5d013adde3c2b418787e51b8d4488b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  deathEffect: {fileID: 0}
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  flashDuration: 0.2
+--- !u!114 &4511284480450652442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989187543047504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6095d51381634a34e87767c72a3c6f05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  deathEffect: {fileID: 0}
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  flashDuration: 0.1
