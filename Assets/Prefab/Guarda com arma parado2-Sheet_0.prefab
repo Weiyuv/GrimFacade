@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5077895620584041660}
+  - component: {fileID: 3114696310195139906}
   m_Layer: 10
-  m_Name: GameObject
+  m_Name: Arma
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,12 +26,39 @@ Transform:
   m_GameObject: {fileID: 4574866742223476672}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.16, y: -0.02, z: -0.18892416}
+  m_LocalPosition: {x: -0.1, y: -0.03, z: -0.18892416}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6429793336140783902}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &3114696310195139906
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4574866742223476672}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &5749376234016769722
 GameObject:
   m_ObjectHideFlags: 0
@@ -45,8 +73,7 @@ GameObject:
   - component: {fileID: 869491972256988194}
   - component: {fileID: 8063081978170922815}
   - component: {fileID: 5466414649017458972}
-  - component: {fileID: 8366406755181969806}
-  - component: {fileID: 5631200846203926028}
+  - component: {fileID: 3220376219218435530}
   m_Layer: 10
   m_Name: Guarda com arma parado2-Sheet_0
   m_TagString: Enemy
@@ -110,7 +137,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 4
   m_Sprite: {fileID: -1600931656, guid: 35eca894dbcf41a468e3820ac93f30e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -230,28 +257,7 @@ MonoBehaviour:
   lives: 4
   smoke: {fileID: 0}
   explosion: {fileID: 0}
---- !u!114 &8366406755181969806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5749376234016769722}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0168377654235314fa5ec5ed7e266dfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 9209621099884425945, guid: c48b5c3cff6c6c04ea348ce2d4664655,
-    type: 3}
-  player: {fileID: 0}
-  firePoint: {fileID: 5077895620584041660}
-  moveSpeed: 0
-  shootingRange: 3
-  fireRate: 2
-  projectileSpeed: 2
-  stoppingDistance: 1
---- !u!114 &5631200846203926028
+--- !u!114 &3220376219218435530
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -260,7 +266,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5749376234016769722}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0ebbc96b60c97a4c82e015e517af702, type: 3}
+  m_Script: {fileID: 11500000, guid: 39f5973a8b2bc7044bfbfa484987edb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 9209621099884425945, guid: c48b5c3cff6c6c04ea348ce2d4664655,

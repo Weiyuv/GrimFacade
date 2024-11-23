@@ -46,16 +46,18 @@ public class Guarda : MonoBehaviour
                 Vector2 direction = (player.position - transform.position).normalized;
                 transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
 
-                // Inverte o sprite do inimigo sem mudar o tamanho
+                // Inverte o sprite do inimigo e o ponto de disparo
                 if (direction.x < 0)
                 {
                     // Vira para a esquerda
-                    GetComponent<SpriteRenderer>().flipX = true; 
+                    GetComponent<SpriteRenderer>().flipX = true;
+                    firePoint.localRotation = Quaternion.Euler(0, 180, 0); // Gira o ponto de disparo
                 }
                 else
                 {
                     // Vira para a direita
-                    GetComponent<SpriteRenderer>().flipX = false; 
+                    GetComponent<SpriteRenderer>().flipX = false;
+                    firePoint.localRotation = Quaternion.Euler(0, 0, 0); // Gira o ponto de disparo
                 }
             }
         }
@@ -79,6 +81,13 @@ public class Guarda : MonoBehaviour
         // Cria o projétil na posição do ponto de disparo
         Vector2 direction = (player.position - firePoint.position).normalized;
         GameObject projectile = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
+
+        // Aplica a rotação dependendo da direção em que o inimigo está virado
+        if (GetComponent<SpriteRenderer>().flipX)
+        {
+            // Inverte a direção do projétil se o inimigo estiver virado para a esquerda
+            direction = new Vector2(-direction.x, direction.y);
+        }
 
         // Aplica velocidade ao projétil na direção do jogador
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
