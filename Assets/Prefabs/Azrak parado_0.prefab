@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 7486638954997888483}
   - component: {fileID: 4038688140926652579}
   - component: {fileID: 532876381426892653}
-  - component: {fileID: 4186291479811436291}
+  - component: {fileID: 5090189588264211333}
   m_Layer: 10
   m_Name: Azrak parado_0
   m_TagString: Enemy
@@ -113,7 +113,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_Sprite: {fileID: -344821931, guid: 26f4f52be376ad7448265ea100346adb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -190,7 +190,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0104904175, y: 0.08392143}
+  m_Offset: {x: 0.019633293, y: 0.024493217}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -201,7 +201,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.18776703, y: 0.34062576}
+  m_Size: {x: 0.31576538, y: 0.4594822}
   m_EdgeRadius: 0
 --- !u!50 &532876381426892653
 Rigidbody2D:
@@ -229,8 +229,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &4186291479811436291
+  m_Constraints: 4
+--- !u!114 &5090189588264211333
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -239,20 +239,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 3262508828288584173}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fa0bcc637b376e40bdece14e476a5c8, type: 3}
+  m_Script: {fileID: 11500000, guid: c5dae3aec95e3114ab890a5077b03f0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.7
-  attackRange: 20
-  attackNearRange: 1
-  chaseRange: 1
-  attackCooldown: 3
-  player: {fileID: 0}
-  attackPointNear: {fileID: 6634547115046737477}
-  attackPointFar: {fileID: 1857049647005494163}
+  moveSpeed: 1
+  attackRange: 0.6
+  shootRange: 5
+  detectionRange: 10
+  attackCooldown: 1
   projectilePrefab: {fileID: 6604747355658436352, guid: b3a61761539e48945adc525b652b51d1,
     type: 3}
-  animator: {fileID: 1131563186644252858}
+  shootPoint: {fileID: 1857049647005494163}
+  modeSwitchCooldown: 2
+  rangedDistance: 5
+  meleeAttackCollider: {fileID: 2816219551734896858}
 --- !u!1 &7704897454595559182
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,6 +262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6634547115046737477}
+  - component: {fileID: 2816219551734896858}
   m_Layer: 10
   m_Name: Melee
   m_TagString: Untagged
@@ -278,9 +279,54 @@ Transform:
   m_GameObject: {fileID: 7704897454595559182}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.19, y: -0.08, z: -0.089635454}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.26, y: 0, z: -0.089635454}
+  m_LocalScale: {x: 0.23186716, y: 0.12228287, z: 0.75251}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1491663832782390891}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2816219551734896858
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7704897454595559182}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.13015622, y: 0.69103134}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.73968756, y: 2.579508}
+  m_EdgeRadius: 0

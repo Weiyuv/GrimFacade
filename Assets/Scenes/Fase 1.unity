@@ -1208,10 +1208,19 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 408607176}
+    - target: {fileID: 6645969134240031924, guid: 0b5cdb9c2fc8f4447bbaa4af820577fe,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5749376234016769722, guid: 0b5cdb9c2fc8f4447bbaa4af820577fe,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1498883324}
   m_SourcePrefab: {fileID: 100100000, guid: 0b5cdb9c2fc8f4447bbaa4af820577fe, type: 3}
 --- !u!1 &472858999
 GameObject:
@@ -1649,6 +1658,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 86a62d2897d559b45964be4343b44006, type: 3}
+--- !u!4 &625731732 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5077895620584041660, guid: 0b5cdb9c2fc8f4447bbaa4af820577fe,
+    type: 3}
+  m_PrefabInstance: {fileID: 438728535}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &671662716
 GameObject:
   m_ObjectHideFlags: 0
@@ -3274,6 +3289,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1498883323 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5749376234016769722, guid: 0b5cdb9c2fc8f4447bbaa4af820577fe,
+    type: 3}
+  m_PrefabInstance: {fileID: 438728535}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1498883324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498883323}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0168377654235314fa5ec5ed7e266dfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 9209621099884425945, guid: c48b5c3cff6c6c04ea348ce2d4664655,
+    type: 3}
+  player: {fileID: 408607176}
+  firePoint: {fileID: 625731732}
+  moveSpeed: 0
+  shootingRange: 5
+  fireRate: 2
+  projectileSpeed: 3
+  stoppingDistance: 2
 --- !u!1 &1596420170
 GameObject:
   m_ObjectHideFlags: 0
@@ -3621,11 +3663,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4664568246221834, guid: d42a24c9cbd336e46aa519ab65fd03d8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.01
+      value: -5.69
       objectReference: {fileID: 0}
     - target: {fileID: 4664568246221834, guid: d42a24c9cbd336e46aa519ab65fd03d8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -26.96
+      value: -28.94
       objectReference: {fileID: 0}
     - target: {fileID: 4664568246221834, guid: d42a24c9cbd336e46aa519ab65fd03d8, type: 3}
       propertyPath: m_LocalPosition.z

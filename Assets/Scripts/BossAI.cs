@@ -5,6 +5,7 @@ public class BossAI : MonoBehaviour
     public float moveSpeed = 5f;
     public float attackRange = 3f;
     public float shootRange = 10f;
+    public float detectionRange = 15f; // Novo alcance máximo para perseguir o jogador
     public float attackCooldown = 1f;
     public GameObject projectilePrefab;
     public Transform shootPoint;
@@ -19,18 +20,16 @@ public class BossAI : MonoBehaviour
     private bool isMovingToPlayer = false;
     private bool isMeleeMode = true;
 
-    // Collider para o ataque corpo a corpo
     public Collider2D meleeAttackCollider;
 
-    private float meleeAttackDuration = 0.5f;  // Duração do ataque corpo a corpo (em segundos)
-    private float meleeAttackTimer = 0f;  // Temporizador para controlar a duração do ataque
+    private float meleeAttackDuration = 0.5f;
+    private float meleeAttackTimer = 0f;
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         animator = GetComponent<Animator>();
 
-        // Certifique-se de que o Collider esteja desativado inicialmente
         if (meleeAttackCollider != null)
         {
             meleeAttackCollider.enabled = false;
@@ -40,6 +39,13 @@ public class BossAI : MonoBehaviour
     private void Update()
     {
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+
+        // Se o jogador estiver fora do alcance de detecção, o Boss não faz nada
+        if (distanceToPlayer > detectionRange)
+        {
+            animator.SetBool("IsFlying", false);
+            return;
+        }
 
         // Alterna entre modos (melee / ranged) após o cooldown de troca de modo
         if (Time.time - lastModeSwitchTime >= modeSwitchCooldown)
@@ -89,7 +95,7 @@ public class BossAI : MonoBehaviour
             meleeAttackTimer -= Time.deltaTime;
             if (meleeAttackTimer <= 0 && meleeAttackCollider != null)
             {
-                meleeAttackCollider.enabled = false;  // Desativa o collider após a duração do ataque
+                meleeAttackCollider.enabled = false;
             }
         }
     }
@@ -102,16 +108,12 @@ public class BossAI : MonoBehaviour
             animator.SetBool("IsMoving", true);
             lastAttackTime = Time.time;
 
-            // Ativa o Collider durante a animação do ataque corpo a corpo
             if (meleeAttackCollider != null)
             {
                 meleeAttackCollider.enabled = true;
             }
 
-            // Inicia o temporizador para o ataque corpo a corpo
             meleeAttackTimer = meleeAttackDuration;
-
-            // Inicia a animação do ataque corpo a corpo
             animator.SetTrigger("AttackMelee");
         }
     }
@@ -148,18 +150,13 @@ public class BossAI : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
         animator.SetFloat("Speed", 1f);
 
-        // Quando o boss chega ao jogador e está dentro do alcance de ataque
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
         if (distanceToPlayer <= attackRange)
         {
-            // Realiza o ataque corpo a corpo
             animator.SetTrigger("AttackMelee");
             lastAttackTime = Time.time;
-
-            // Lógica para dano corpo a corpo pode ser implementada aqui
             Debug.Log("Melee Attack!");
 
-            // Após o ataque, o boss para de se mover
             isMovingToPlayer = false;
             animator.SetBool("IsMoving", false);
         }
