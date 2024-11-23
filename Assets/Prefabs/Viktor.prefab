@@ -9764,6 +9764,7 @@ GameObject:
   - component: {fileID: 442732220619965257}
   - component: {fileID: 6327517365700913138}
   - component: {fileID: 6826428202784609696}
+  - component: {fileID: 8947187298251226389}
   m_Layer: 2
   m_Name: Viktor
   m_TagString: Player
@@ -9827,7 +9828,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 11
   m_Sprite: {fileID: -315429113, guid: b45c238493cee8f448a3459bbffe780f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9961,7 +9962,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989187543047504}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b5d013adde3c2b418787e51b8d4488b, type: 3}
   m_Name: 
@@ -9970,3 +9971,19 @@ MonoBehaviour:
   deathEffect: {fileID: 0}
   damageColor: {r: 1, g: 0, b: 0, a: 1}
   flashDuration: 0.2
+--- !u!114 &8947187298251226389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989187543047504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d60ebddc6cebb442b6c8d10d960db11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  deathEffect: {fileID: 0}
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  flashDuration: 0.1

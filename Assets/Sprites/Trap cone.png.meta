@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 61d3f8788eebd344896d40400d681c87
+guid: 8efeccff0c789ca4994d0ced1e70abc6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -94,32 +94,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -136,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pixil-frame-0 (10)_1
+      name: Trap cone_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 61
-        width: 23
-        height: 30
+        x: 0
+        y: 0
+        width: 32.5
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 832ddfecaeef2be4ba6d77d1b35998b3
-      internalID: -2051096298
+      spriteID: 3b1e9b011f4346c488c8ba45e380c32c
+      internalID: 1248565584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pixil-frame-0 (10)_2
+      name: Trap cone_1
       rect:
         serializedVersion: 2
-        x: 38
-        y: 61
-        width: 28
-        height: 30
+        x: 32
+        y: 0
+        width: 32.5
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,50 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 950cf9ca377404f4188c62f0019251fb
-      internalID: 744900323
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixil-frame-0 (10)_3
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 61
-        width: 29
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8111fcf4458bf84479dfdf4146f7998f
-      internalID: -1348927733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pixil-frame-0 (10)_4
-      rect:
-        serializedVersion: 2
-        x: 109
-        y: 61
-        width: 35
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ede254e14b3d534a9d978e505c3d660
-      internalID: 536354750
+      spriteID: 689185558bd56444bbcacf922cbe74f2
+      internalID: -1035604541
       vertices: []
       indices: 
       edges: []
@@ -230,11 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pixil-frame-0 (10)_0: 1189098135
-      pixil-frame-0 (10)_1: -2051096298
-      pixil-frame-0 (10)_2: 744900323
-      pixil-frame-0 (10)_3: -1348927733
-      pixil-frame-0 (10)_4: 536354750
+      Trap cone_0: 1248565584
+      Trap cone_1: -1035604541
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
