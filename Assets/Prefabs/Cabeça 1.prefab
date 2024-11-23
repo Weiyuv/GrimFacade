@@ -184,9 +184,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   speed: 1
-  dashSpeed: 3
-  followDistance: 3
-  dashDistance: 2
+  dashSpeed: 2
+  followDistance: 2
+  dashDistance: 1.5
   dashDuration: 0.5
   postDashPause: 3
 --- !u!50 &1363858942252609619

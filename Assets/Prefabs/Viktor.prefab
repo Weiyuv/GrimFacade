@@ -117,7 +117,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 0.6
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -9765,6 +9765,7 @@ GameObject:
   - component: {fileID: 6327517365700913138}
   - component: {fileID: 6826428202784609696}
   - component: {fileID: 8947187298251226389}
+  - component: {fileID: 8460377742782428633}
   m_Layer: 2
   m_Name: Viktor
   m_TagString: Player
@@ -9943,7 +9944,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989187543047504}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a6aaa9c7fe0a6e42aac7414320b2761, type: 3}
   m_Name: 
@@ -9970,7 +9971,7 @@ MonoBehaviour:
   maxHealth: 100
   deathEffect: {fileID: 0}
   damageColor: {r: 1, g: 0, b: 0, a: 1}
-  flashDuration: 0.2
+  flashDuration: 0.1
 --- !u!114 &8947187298251226389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9987,3 +9988,23 @@ MonoBehaviour:
   deathEffect: {fileID: 0}
   damageColor: {r: 1, g: 0, b: 0, a: 1}
   flashDuration: 0.1
+--- !u!114 &8460377742782428633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989187543047504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0c3b8350afde444eb668ad5490c4fa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anima: {fileID: 95530863979618488}
+  rdb: {fileID: 50029467371763818}
+  fire: {fileID: 198825090059282404}
+  moveSpeed: 9
+  jumpForce: 4.7
+  maxFireUses: 10
+  fireCooldown: 3
+  maxJumps: 2
