@@ -9764,9 +9764,8 @@ GameObject:
   - component: {fileID: 442732220619965257}
   - component: {fileID: 6327517365700913138}
   - component: {fileID: 6826428202784609696}
-  - component: {fileID: 4511284480450652442}
   m_Layer: 2
-  m_Name: PlayerMM
+  m_Name: Viktor
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9971,19 +9970,3 @@ MonoBehaviour:
   deathEffect: {fileID: 0}
   damageColor: {r: 1, g: 0, b: 0, a: 1}
   flashDuration: 0.2
---- !u!114 &4511284480450652442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989187543047504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6095d51381634a34e87767c72a3c6f05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  deathEffect: {fileID: 0}
-  damageColor: {r: 1, g: 0, b: 0, a: 1}
-  flashDuration: 0.1

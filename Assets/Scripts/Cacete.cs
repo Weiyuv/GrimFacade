@@ -5,9 +5,8 @@ public class Cacete : MonoBehaviour
     public float moveSpeed = 3f; // Velocidade de movimento do inimigo
     public float attackRange = 1.5f; // Distância para o ataque melee
     public float attackCooldown = 1f; // Tempo entre ataques
-    public float visionWidth = 5f; // Largura da área de visão (retangular)
-    public float visionHeight = 2f; // Altura da área de visão (retangular)
-    public int damage = 10; // Dano do ataque
+    public float visionRange = 5f; // Distância máxima de visão (usado no lugar do collider)
+    public Collider2D attackCollider; // Referência ao collider de ataque
 
     private Transform player;
     private bool isPlayerInVision = false; // O jogador está no alcance de visão?
@@ -32,32 +31,46 @@ public class Cacete : MonoBehaviour
             Debug.LogError("Animator não encontrado no inimigo!");
         }
 
-        // Adiciona o BoxCollider2D para o campo de visão (área retangular)
-        BoxCollider2D visionCollider = gameObject.AddComponent<BoxCollider2D>();
-        visionCollider.isTrigger = true;  // Isso garante que o collider é apenas um gatilho e não causa colisões físicas
-        visionCollider.size = new Vector2(visionWidth, visionHeight); // Define o tamanho do campo de visão
-        visionCollider.offset = new Vector2(0, 0); // Alinha o collider com o centro do inimigo
+        // Certifique-se de que o collider de ataque esteja desativado inicialmente
+        if (attackCollider != null)
+        {
+            attackCollider.enabled = false;
+        }
     }
 
     void Update()
     {
-        if (player == null || !isPlayerInVision) return; // Certificar que o jogador está no alcance
+        if (player == null) return; // Certificar que o jogador existe
 
+        // Verificar se o jogador está dentro do alcance de visão
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-
-        if (distanceToPlayer <= attackRange)
+        if (distanceToPlayer <= visionRange)
         {
-            // Parar de se mover e atacar
-            if (!isAttacking && Time.time >= lastAttackTime + attackCooldown)
-            {
-                StartCoroutine(Attack());
-            }
-            SetAnimationState("isMoving", false);
+            isPlayerInVision = true;
         }
         else
         {
-            // Mover em direção ao jogador
-            MoveTowardsPlayer();
+            isPlayerInVision = false;
+            SetAnimationState("isMoving", false); // Voltar para o estado Idle
+        }
+
+        if (isPlayerInVision)
+        {
+            // Se o jogador estiver dentro do alcance de visão
+            if (distanceToPlayer <= attackRange)
+            {
+                // Parar de se mover e atacar
+                if (!isAttacking && Time.time >= lastAttackTime + attackCooldown)
+                {
+                    StartCoroutine(Attack());
+                }
+                SetAnimationState("isMoving", false);
+            }
+            else
+            {
+                // Mover em direção ao jogador
+                MoveTowardsPlayer();
+            }
         }
     }
 
@@ -86,17 +99,19 @@ public class Cacete : MonoBehaviour
         // Ativa a animação de ataque
         SetAnimationTrigger("Attack");
 
-        // Aguarda o tempo da animação antes de aplicar dano (opcional)
+        // Ativa o collider de ataque
+        if (attackCollider != null)
+        {
+            attackCollider.enabled = true;
+        }
+
+        // Aguarda o tempo da animação (sem aplicar dano)
         yield return new WaitForSeconds(0.2f);
 
-        // Checar se o jogador está dentro do alcance e aplicar dano
-        if (Vector2.Distance(transform.position, player.position) <= attackRange)
+        // Desativa o collider de ataque após a animação
+        if (attackCollider != null)
         {
-            PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
-            {
-                playerHealth.TakeDamage(damage);
-            }
+            attackCollider.enabled = false;
         }
 
         // Aguarda antes de permitir outro ataque
@@ -122,28 +137,15 @@ public class Cacete : MonoBehaviour
         }
     }
 
-    // Detecta o jogador entrando no campo de visão (aqui apenas detecta a entrada na área de visão)
-    private void OnTriggerEnter2D(Collider2D collision)
+    // Colisão de ataque - verifique se o jogador é atingido
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            isPlayerInVision = true;
+            // Aplica o efeito de dano ou outro efeito desejado
+            Debug.Log("Jogador atingido pelo ataque!");
+            // Exemplo: PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
+            // if (playerHealth != null) playerHealth.TakeDamage(10);
         }
-    }
-
-    // Detecta o jogador saindo do campo de visão
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            isPlayerInVision = false;
-            SetAnimationState("isMoving", false); // Volta para Idle
-        }
-    }
-
-    // Não será mais necessário detectar dano no collider, pois será feito pelo ataque
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        // Não faça nada aqui. O dano não será mais aplicado com base no collider.
     }
 }
