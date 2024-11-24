@@ -1,41 +1,76 @@
 using UnityEngine;
-using System.Collections; // Necessário para o IEnumerator
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-    public int maxHealth = 100; // Saúde máxima do jogador
+    public int maxHealth = 100;
     private int currentHealth;
 
-    public GameObject deathEffect; // Efeito ao morrer (opcional)
+    public GameObject deathEffect;
+    public Slider healthBar; // Certifique-se de atribuí-lo no Inspector!
 
-    private SpriteRenderer spriteRenderer; // Para modificar a cor do sprite
-    private Color originalColor; // Cor original do personagem
-    public Color damageColor = Color.red; // Cor que o personagem ficará ao tomar dano
-    public float flashDuration = 0.1f; // Duração do flash (em segundos)
-    private bool isFlashing = false; // Para evitar múltiplos flashes ao mesmo tempo
+    private SpriteRenderer spriteRenderer;
+    private Color originalColor;
+    public Color damageColor = Color.red;
+    public float flashDuration = 0.1f;
+
+    private float damageFlashTimer = 0f;
+
+    // Referência ao ponto de respawn
+    public Transform respawnPoint; 
+    public float respawnDelay = 2f; // Tempo de delay para o respawn
 
     void Start()
     {
-        // Inicializa a saúde com o valor máximo
         currentHealth = maxHealth;
 
-        // Obtém o componente SpriteRenderer
+        // Configura o Slider
+        if (healthBar != null)
+        {
+            healthBar.maxValue = maxHealth;
+            healthBar.value = currentHealth;
+        }
+
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer != null)
         {
-            originalColor = spriteRenderer.color; // Armazena a cor original do personagem
+            originalColor = spriteRenderer.color;
+        }
+    }
+
+    void Update()
+    {
+        if (damageFlashTimer > 0)
+        {
+            damageFlashTimer -= Time.deltaTime;
+            if (damageFlashTimer <= 0 && spriteRenderer != null)
+            {
+                spriteRenderer.color = originalColor;
+            }
         }
     }
 
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage; // Reduz a saúde
-        Debug.Log("Player tomou dano: " + damage + " | Saúde atual: " + currentHealth);
-
-        // Se o personagem já estiver piscando, não deixe ele piscar novamente até o final do efeito
-        if (!isFlashing)
+        currentHealth -= damage;
+        if (currentHealth < 0)
         {
-            StartCoroutine(FlashRed());
+            currentHealth = 0;
+        }
+
+        Debug.Log("Saúde Atual: " + currentHealth);
+
+        // Atualiza a barra de vida
+        if (healthBar != null)
+        {
+            healthBar.value = currentHealth;
+            Debug.Log("Slider atualizado: " + healthBar.value);
+        }
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = damageColor;
+            damageFlashTimer = flashDuration;
         }
 
         if (currentHealth <= 0)
@@ -48,14 +83,39 @@ public class Health : MonoBehaviour
     {
         Debug.Log("O jogador morreu!");
 
-        // Se houver um efeito de morte, instancie-o
         if (deathEffect != null)
         {
             Instantiate(deathEffect, transform.position, Quaternion.identity);
         }
 
-        // Desativar o jogador ou reiniciar o jogo
-        gameObject.SetActive(false); // Alternativa: adicione lógica para recomeçar o nível.
+        // Desativa o jogador temporariamente
+        gameObject.SetActive(false);
+
+        // Inicia o respawn com delay
+        Invoke(nameof(Respawn), respawnDelay);
+    }
+
+    void Respawn()
+    {
+        // Restaura a saúde
+        currentHealth = maxHealth;
+
+        // Atualiza a barra de vida
+        if (healthBar != null)
+        {
+            healthBar.value = currentHealth;
+        }
+
+        // Move o jogador para o ponto de respawn
+        if (respawnPoint != null)
+        {
+            transform.position = respawnPoint.position;
+        }
+
+        // Reativa o jogador
+        gameObject.SetActive(true);
+
+        Debug.Log("Player respawnou!");
     }
 
     public void Heal(int healAmount)
@@ -63,43 +123,31 @@ public class Health : MonoBehaviour
         currentHealth += healAmount;
         if (currentHealth > maxHealth)
         {
-            currentHealth = maxHealth; // Não ultrapassa a saúde máxima
+            currentHealth = maxHealth;
         }
-        Debug.Log("Player curado: " + healAmount + " | Saúde atual: " + currentHealth);
+
+        // Atualiza a barra de vida
+        if (healthBar != null)
+        {
+            healthBar.value = currentHealth;
+        }
+
+        Debug.Log("Saúde Curada: " + healAmount + " | Saúde Atual: " + currentHealth);
     }
 
-    // Coroutine para piscar o personagem de vermelho
-    private IEnumerator FlashRed()
-    {
-        isFlashing = true;
-
-        // Altera a cor para vermelho
-        spriteRenderer.color = damageColor;
-
-        // Espera a duração do flash
-        yield return new WaitForSeconds(flashDuration);
-
-        // Restaura a cor original
-        spriteRenderer.color = originalColor;
-
-        isFlashing = false;
-    }
-
-    // Detecta colisões com objetos com a tag "Damage" ou "Enemy"
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Damage") || collision.collider.CompareTag("Enemy"))
         {
-            TakeDamage(10); // Chama TakeDamage para aplicar dano. O valor 10 pode ser ajustado conforme necessário.
+            TakeDamage(10);
         }
     }
 
-    // Se estiver usando triggers, utilize OnTriggerEnter2D
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.CompareTag("Damage") || collider.CompareTag("Enemy"))
         {
-            TakeDamage(10); // Chama TakeDamage para aplicar dano.
+            TakeDamage(10);
         }
     }
 }

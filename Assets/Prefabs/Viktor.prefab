@@ -288,7 +288,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.14
+      scalar: 0.11
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4813,8 +4813,8 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 730976939
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_RenderMode: 1
   m_MeshDistribution: 0
@@ -9986,6 +9986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   deathEffect: {fileID: 0}
+  healthBar: {fileID: 0}
   damageColor: {r: 1, g: 0, b: 0, a: 1}
   flashDuration: 0.1
 --- !u!114 &8460377742782428633
@@ -10004,7 +10005,7 @@ MonoBehaviour:
   rdb: {fileID: 50029467371763818}
   fire: {fileID: 198825090059282404}
   moveSpeed: 9
-  jumpForce: 4.7
+  jumpForce: 4
   maxFireUses: 10
   fireCooldown: 3
-  maxJumps: 2
+  maxJumps: 1
