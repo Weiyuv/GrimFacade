@@ -516,6 +516,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b5cdb9c2fc8f4447bbaa4af820577fe, type: 3}
+--- !u!1 &231227179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 231227180}
+  m_Layer: 0
+  m_Name: Respawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &231227180
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231227179}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.76, y: -26.93, z: 0.07843147}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &240882423
 GameObject:
   m_ObjectHideFlags: 0
@@ -4272,6 +4303,11 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1783874308}
+    - target: {fileID: 8947187298251226389, guid: d42a24c9cbd336e46aa519ab65fd03d8,
+        type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 231227180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4616,6 +4652,8 @@ MonoBehaviour:
   healthBar: {fileID: 1783874308}
   damageColor: {r: 1, g: 0, b: 0, a: 1}
   flashDuration: 0.1
+  respawnPoint: {fileID: 2053981676}
+  respawnDelay: 2
 --- !u!114 &1783874308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6362,3 +6400,4 @@ SceneRoots:
   - {fileID: 1714994571}
   - {fileID: 2053981676}
   - {fileID: 1166973230}
+  - {fileID: 231227180}
