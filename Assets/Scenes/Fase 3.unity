@@ -639,6 +639,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Azrak parado_0
       objectReference: {fileID: 0}
+    - target: {fileID: 5090189588264211333, guid: e88fa553cddfa2c42866d21dde3cdc6f,
+        type: 3}
+      propertyPath: detectionRange
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -908,6 +913,11 @@ PrefabInstance:
       propertyPath: stoppingDistance
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1805463206558786682, guid: ff0a33df059fa3f419c64970911bc137,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 110
+      objectReference: {fileID: 0}
     - target: {fileID: 2640311052353358364, guid: ff0a33df059fa3f419c64970911bc137,
         type: 3}
       propertyPath: lives
@@ -972,6 +982,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291086200943917655, guid: ff0a33df059fa3f419c64970911bc137,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8690197215201920333, guid: ff0a33df059fa3f419c64970911bc137,
         type: 3}
@@ -1161,6 +1176,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "Cabe\xE7a (1)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8858921793604471158, guid: 2fc5b189c2dbb534c9e2f92b7496bf87,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 110
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1354,6 +1374,11 @@ PrefabInstance:
       propertyPath: stoppingDistance
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1805463206558786682, guid: ff0a33df059fa3f419c64970911bc137,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 110
+      objectReference: {fileID: 0}
     - target: {fileID: 2640311052353358364, guid: ff0a33df059fa3f419c64970911bc137,
         type: 3}
       propertyPath: lives
@@ -1413,6 +1438,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291086200943917655, guid: ff0a33df059fa3f419c64970911bc137,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8690197215201920333, guid: ff0a33df059fa3f419c64970911bc137,
         type: 3}
@@ -5450,6 +5480,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 212571893892282256, guid: d42a24c9cbd336e46aa519ab65fd03d8,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 110
+      objectReference: {fileID: 0}
     - target: {fileID: 8947187298251226389, guid: d42a24c9cbd336e46aa519ab65fd03d8,
         type: 3}
       propertyPath: healthBar
@@ -6973,6 +7008,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "Cabe\xE7a"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8858921793604471158, guid: 2fc5b189c2dbb534c9e2f92b7496bf87,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 110
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
